@@ -63,7 +63,7 @@ public class IGACrawler extends Crawler {
                                     String singular = word.replaceAll("s$", "");
                                     if(word == singular)
                                         singular = word.replaceAll("x$", "");
-                                    if(word.length()>2)
+                                    if(singular.length()>2)
                                     if (trie.contains(singular)) {
                                         type = singular;
                                         break;
