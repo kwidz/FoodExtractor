@@ -117,6 +117,6 @@ public class Main {
             trie.insert(item);
         }
 
-	 Crawler i = new MetroCrawler(trie);
+	 IngredientCrawler i = new IGACrawler(trie);
     }
 }

@@ -7,7 +7,7 @@ import org.jsoup.select.Elements;
 
 import java.io.IOException;
 
-public class MetroCrawler extends Crawler {
+public class MetroCrawler extends IngredientCrawler {
 
     public MetroCrawler(Trie _vegetables) {
         vegetables = _vegetables;

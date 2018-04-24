@@ -6,11 +6,8 @@ import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
 import java.io.IOException;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.Statement;
 
-public class IGACrawler extends Crawler {
+public class IGACrawler extends IngredientCrawler {
 
 
     public IGACrawler(Trie _vegetables){

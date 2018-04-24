@@ -5,7 +5,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.Statement;
 
-public abstract class Crawler {
+public abstract class IngredientCrawler {
     Trie vegetables;
 
     public void insertDB(String name, String brand, String type, String price){
