@@ -6,11 +6,12 @@ import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
 import java.io.IOException;
-import java.sql.SQLOutput;
+import java.util.ArrayList;
+import java.util.List;
 
 public class RicardoCrawler {
 
-
+    ArrayList<String> allIngredients = new ArrayList<String>();
     public RicardoCrawler() {
         int i = 0;
         while(true) {
@@ -38,8 +39,8 @@ public class RicardoCrawler {
                     ) {
 
 
-                System.out.println("\n#################################\n");
-                System.out.println(rec.attr("title")+ "\n");
+                //System.out.println("\n#################################\n");
+                //System.out.println(rec.attr("title")+ "\n");
                 Element link = rec.select("a").first();
                 //Link to access one recipe of the page
                 String absHref = link.attr("abs:href"); // "http://jsoup.org/"
@@ -59,12 +60,18 @@ public class RicardoCrawler {
                 Elements ListComponents = recipe.getElementsByClass("form-ingredients").get(0).getElementsByTag("li");
                 for (Element e : ListComponents
                         ) {
-                    System.out.println(e.text());
+                    //System.out.println(e.text());
+                    allIngredients.add(e.text());
 
                 }
             }
         }
+        System.out.println("Recipe crawler done ! ");
 
+    }
+
+    public ArrayList<String> getAllIngredients(){
+        return allIngredients;
     }
 
 }
