@@ -60,7 +60,7 @@ public class MetroCrawler extends IngredientCrawler {
                         System.out.println("name : " + e.text());
                         name = e.text();
 
-                        type = findVegetableType(name);//=_vegetables.bestMatch(e.text(),100);
+                        //type = findVegetableType(name);//=_vegetables.bestMatch(e.text(),100);
 
                         System.out.println("Type : " + type);
 

@@ -73,8 +73,8 @@ public class MachineLearningGUI extends Application {
         for (String s: allIngredients
              ) {
 
-            if(components.Classify(s)=="unclassified")
-                listComponents.getItems().add(s);
+            //if(components.classify(s).equals("unclassified"))
+              //  listComponents.getItems().add(s);
         }
         System.out.println(allIngredients.size());
         listComponents.getSelectionModel().selectedItemProperty().addListener(new ChangeListener<String>() {
@@ -82,9 +82,9 @@ public class MachineLearningGUI extends Application {
             @Override
             public void changed(ObservableValue<? extends String> observable, String oldValue, String newValue) {
                 // Your action here
-                String type = components.Classify(newValue);
-                typefield.setText(type);
-                System.out.println("Selected item: " + newValue+ " "+type);
+                //String type = components.classify(newValue);
+                //typefield.setText(type);
+                //System.out.println("Selected item: " + newValue+ " "+type);
             }
         });
 

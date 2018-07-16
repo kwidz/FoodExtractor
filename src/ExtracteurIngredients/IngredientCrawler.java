@@ -1,13 +1,24 @@
 package ExtracteurIngredients;
 
 
+import MachineLearning.IngredientReader;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.Statement;
+import java.util.ArrayList;
 
 public abstract class IngredientCrawler {
     Trie vegetables;
+    IngredientReader classificator;
+    ArrayList<Ingredient> allGroceryComponents;
 
+
+    public IngredientCrawler(){
+        classificator = new IngredientReader("/home/kwidz/Cours/Memoire Maitrise/ExtracteurIngrédients/src/MachineLearning/Meat.txt","/home/kwidz/Cours/Memoire Maitrise/ExtracteurIngrédients/src/MachineLearning/Modifiers.txt", "/home/kwidz/Cours/Memoire Maitrise/ExtracteurIngrédients/src/MachineLearning/Vegetables.txt", "/home/kwidz/Cours/Memoire Maitrise/ExtracteurIngrédients/src/MachineLearning/Forbiden.txt");
+        allGroceryComponents = new ArrayList<>();
+    }
+    //TODO Remake with the ingredient type
     public void insertDB(String name, String brand, String type, String price){
         Connection c = null;
         Statement stmt = null;
@@ -62,7 +73,7 @@ public abstract class IngredientCrawler {
         }
         System.out.println("Table created successfully");
     }
-    protected String findVegetableType(String name) {
+    /*protected String findVegetableType(String name) {
         String type="";
         String[] result = name.split("\\s");
         for (String word:result) {
@@ -86,7 +97,13 @@ public abstract class IngredientCrawler {
 
         }
         return type;
+    }*/
+
+    protected void findVegetableType(Ingredient i){
+        i.setType(classificator.classify(i));
     }
 
-
+    public String toString(){
+        return allGroceryComponents.toString();
+    }
 }

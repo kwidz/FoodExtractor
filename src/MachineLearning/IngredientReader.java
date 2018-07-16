@@ -3,6 +3,8 @@ package MachineLearning;
 The purpose of this program is to help the web crawler to find the good type of each component
  */
 
+import ExtracteurIngredients.Ingredient;
+
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -52,7 +54,9 @@ public class IngredientReader {
         return list;
     }
 
-    public String Classify(String text){
+    public String classify(Ingredient i){
+        String text=i.getName();
+
         if (SearchInDictionary(text, forbidenTypes)!="")
             return "Forbiden";
         String type = SearchInDictionary(text, meatFishCheeseList);
@@ -73,7 +77,7 @@ public class IngredientReader {
             return type;
 
         }
-        System.out.println(text+" "+type);
+
         return "unclassified";
 
     }

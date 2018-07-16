@@ -12,7 +12,13 @@ import java.util.List;
 public class RicardoCrawler {
 
     ArrayList<String> allIngredients = new ArrayList<String>();
+    ArrayList<Recipe> allRecipes = new ArrayList<Recipe>();
     public RicardoCrawler() {
+        crawl();
+
+    }
+
+    private void crawl(){
         int i = 0;
         while(true) {
             i++;
@@ -20,7 +26,6 @@ public class RicardoCrawler {
             Document doc = null;
 
             try {
-                //doc = Jsoup.connect("https://www.iga.net/fr/epicerie_en_ligne/viande").get();
                 doc = Jsoup.connect(url)
                         .userAgent("Mozilla/5.0 (X11; Linux x86_64; rv:58.0) Gecko/20100101 Firefox/58.0")
                         .referrer("http://www.google.com")
@@ -40,6 +45,7 @@ public class RicardoCrawler {
 
 
                 //System.out.println("\n#################################\n");
+                String name = rec.attr("title");
                 //System.out.println(rec.attr("title")+ "\n");
                 Element link = rec.select("a").first();
                 //Link to access one recipe of the page
@@ -47,7 +53,6 @@ public class RicardoCrawler {
 
                 Document recipe = null;
                 try {
-                    //doc = Jsoup.connect("https://www.iga.net/fr/epicerie_en_ligne/viande").get();
                     recipe = Jsoup.connect(absHref)
                             .userAgent("Mozilla/5.0 (X11; Linux x86_64; rv:58.0) Gecko/20100101 Firefox/58.0")
                             .referrer("http://www.google.com")
@@ -57,21 +62,27 @@ public class RicardoCrawler {
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
+
+                // get all components of the recipe !
                 Elements ListComponents = recipe.getElementsByClass("form-ingredients").get(0).getElementsByTag("li");
+                ArrayList<String> composition = new ArrayList<String>();
                 for (Element e : ListComponents
                         ) {
                     //System.out.println(e.text());
                     allIngredients.add(e.text());
-
+                    composition.add(e.text());
                 }
+                Recipe r = new Recipe(name,composition);
+                allRecipes.add(r);
             }
         }
         System.out.println("Recipe crawler done ! ");
 
     }
 
+    //return all ingredients for machine learning classificator
     public ArrayList<String> getAllIngredients(){
         return allIngredients;
     }
-
+    public ArrayList<Recipe> getAllRecipes(){return  allRecipes;}
 }
