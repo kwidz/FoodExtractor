@@ -56,6 +56,11 @@ public class IngredientReader {
 
     public String classify(Ingredient i){
         String text=i.getName();
+        return classify(text);
+
+    }
+
+    public String classify(String text){
 
         if (SearchInDictionary(text, forbidenTypes)!="")
             return "Forbiden";
@@ -81,6 +86,7 @@ public class IngredientReader {
         return "unclassified";
 
     }
+
 
     private String SearchInDictionary(String text, List<String> myTypes) {
          for (String s: myTypes

@@ -13,7 +13,7 @@ public class MetroCrawler extends IngredientCrawler {
         vegetables = _vegetables;
 
         //Get the html page
-        createDB();
+        //createDB();
         int i=1;
         while (true) {
             Document doc = null;
@@ -80,7 +80,7 @@ public class MetroCrawler extends IngredientCrawler {
                     }
 
                 }
-                insertDB(name, brand, type, price);
+                //insertDB(name, brand, type, price);
 
             }
         }

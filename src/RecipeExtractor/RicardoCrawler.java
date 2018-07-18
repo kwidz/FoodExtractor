@@ -1,5 +1,6 @@
 package RecipeExtractor;
 
+import MachineLearning.IngredientReader;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -13,7 +14,9 @@ public class RicardoCrawler {
 
     ArrayList<String> allIngredients = new ArrayList<String>();
     ArrayList<Recipe> allRecipes = new ArrayList<Recipe>();
+    IngredientReader classificator;
     public RicardoCrawler() {
+        classificator = new IngredientReader("/home/kwidz/Cours/Memoire Maitrise/ExtracteurIngrédients/src/MachineLearning/Meat.txt","/home/kwidz/Cours/Memoire Maitrise/ExtracteurIngrédients/src/MachineLearning/Modifiers.txt", "/home/kwidz/Cours/Memoire Maitrise/ExtracteurIngrédients/src/MachineLearning/Vegetables.txt", "/home/kwidz/Cours/Memoire Maitrise/ExtracteurIngrédients/src/MachineLearning/Forbiden.txt");
         crawl();
 
     }

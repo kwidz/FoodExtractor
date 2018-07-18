@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/src/Optimisation/DAO.java" line="147" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="54c89381-7bbd-4ac9-912e-6823bfa69154" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ExtracteurIngredients/Ingredient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/RecipeExtractor/Recipe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Optimisation/DAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Optimisation/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ExtracteurIngrédients/ExtracteurIngredients/IGACrawler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ExtracteurIngrédients/ExtracteurIngredients/IGACrawler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ExtracteurIngrédients/ExtracteurIngredients/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ExtracteurIngrédients/ExtracteurIngredients/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ExtracteurIngredients/IGACrawler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ExtracteurIngredients/IGACrawler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ExtracteurIngredients/Ingredient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ExtracteurIngredients/Ingredient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ExtracteurIngredients/IngredientCrawler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ExtracteurIngredients/IngredientCrawler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ExtracteurIngredients/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ExtracteurIngredients/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ExtracteurIngredients/MetroCrawler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ExtracteurIngredients/MetroCrawler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GUI/MachineLearningGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/MachineLearningGUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MachineLearning/Forbiden.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/MachineLearning/Forbiden.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MachineLearning/IngredientReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MachineLearning/IngredientReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RecipeExtractor/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RecipeExtractor/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RecipeExtractor/Recipe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RecipeExtractor/Recipe.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/RecipeExtractor/RicardoCrawler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RecipeExtractor/RicardoCrawler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test.db" beforeDir="false" />
     </list>
@@ -34,20 +35,48 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MetroCrawler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ExtracteurIngredients/MetroCrawler.java">
+      <file leaf-file-name="DAO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Optimisation/DAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1197">
-              <caret line="62" column="26" selection-start-line="62" selection-start-column="26" selection-end-line="62" selection-end-column="26" />
+            <state relative-caret-position="399">
+              <caret line="131" lean-forward="true" selection-start-line="131" selection-end-line="131" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/RecipeExtractor/Main.java">
+        <entry file="file://$PROJECT_DIR$/src/Optimisation/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="7" column="44" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
+            <state relative-caret-position="231">
+              <caret line="11" column="41" lean-forward="true" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IngredientCrawler.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ExtracteurIngredients/IngredientCrawler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="23" selection-start-line="22" selection-start-column="8" selection-end-line="23" />
+              <folding>
+                <element signature="e#349#350#0" expanded="true" />
+                <element signature="e#392#393#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Classificator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/MachineLearning/Classificator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="6" column="54" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="54" />
             </state>
           </provider>
         </entry>
@@ -56,49 +85,25 @@
         <entry file="file://$PROJECT_DIR$/src/ExtracteurIngredients/Ingredient.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="399">
-              <caret line="23" column="59" selection-start-line="23" selection-start-column="59" selection-end-line="23" selection-end-column="59" />
+              <caret line="23" column="33" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
               <folding>
-                <element signature="e#470#471#0" expanded="true" />
-                <element signature="e#538#539#0" expanded="true" />
+                <element signature="e#506#507#0" expanded="true" />
+                <element signature="e#537#538#0" expanded="true" />
+                <element signature="e#564#565#0" expanded="true" />
+                <element signature="e#596#597#0" expanded="true" />
+                <element signature="e#624#625#0" expanded="true" />
+                <element signature="e#656#657#0" expanded="true" />
+                <element signature="e#684#685#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RicardoCrawler.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/RecipeExtractor/RicardoCrawler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="369">
-              <caret line="70" column="22" selection-start-line="70" selection-start-column="22" selection-end-line="70" selection-end-column="22" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#313#321#0" expanded="true" />
-                <element signature="e#373#381#0" expanded="true" />
-                <element signature="e#2284#2292#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Recipe.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/RecipeExtractor/Recipe.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="15" column="43" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#333#334#0" expanded="true" />
-                <element signature="e#360#361#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IGACrawler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ExtracteurIngredients/IGACrawler.java">
+      <file leaf-file-name="IngredientReader.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/MachineLearning/IngredientReader.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="21">
-              <caret line="17" column="145" selection-start-line="17" selection-start-column="145" selection-end-line="17" selection-end-column="145" />
+              <caret line="58" column="30" selection-start-line="58" selection-start-column="30" selection-end-line="58" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -106,41 +111,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Forbiden.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/MachineLearning/Forbiden.txt">
+      <file leaf-file-name="IGACrawler.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/ExtracteurIngredients/IGACrawler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="11" selection-start-column="11" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Modifiers.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/MachineLearning/Modifiers.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="6" selection-start-column="6" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MachineLearningGUI.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/GUI/MachineLearningGUI.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="334">
-              <caret line="47" selection-start-line="47" selection-end-line="47" />
+            <state relative-caret-position="357">
+              <caret line="17" column="87" lean-forward="true" selection-start-line="17" selection-start-column="79" selection-end-line="17" selection-end-column="87" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Vegetables.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/MachineLearning/Vegetables.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5187">
-              <caret line="247" selection-start-line="247" selection-end-line="247" />
             </state>
           </provider>
         </entry>
@@ -166,6 +144,11 @@
       <find />
       <find>content</find>
       <find>findVegetable</find>
+      <find>FOOD</find>
+      <find>all</find>
+      <find>allgr</find>
+      <find>classificator</find>
+      <find>syste</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -201,17 +184,19 @@
         <option value="$PROJECT_DIR$/src/MachineLearning/Meat.txt" />
         <option value="$PROJECT_DIR$/src/MachineLearning/Modifiers.txt" />
         <option value="$PROJECT_DIR$/src/MachineLearning/Vegetables.txt" />
-        <option value="$PROJECT_DIR$/src/ExtracteurIngredients/Ingredient.java" />
         <option value="$PROJECT_DIR$/src/ExtracteurIngredients/Main.java" />
-        <option value="$PROJECT_DIR$/src/ExtracteurIngredients/IngredientCrawler.java" />
         <option value="$PROJECT_DIR$/src/GUI/MachineLearningGUI.java" />
-        <option value="$PROJECT_DIR$/src/ExtracteurIngredients/MetroCrawler.java" />
-        <option value="$PROJECT_DIR$/src/MachineLearning/IngredientReader.java" />
         <option value="$PROJECT_DIR$/src/MachineLearning/Forbiden.txt" />
-        <option value="$PROJECT_DIR$/src/ExtracteurIngredients/IGACrawler.java" />
         <option value="$PROJECT_DIR$/src/RecipeExtractor/Main.java" />
+        <option value="$PROJECT_DIR$/src/ExtracteurIngredients/Ingredient.java" />
         <option value="$PROJECT_DIR$/src/RecipeExtractor/Recipe.java" />
+        <option value="$PROJECT_DIR$/src/ExtracteurIngredients/MetroCrawler.java" />
+        <option value="$PROJECT_DIR$/src/ExtracteurIngredients/IngredientCrawler.java" />
         <option value="$PROJECT_DIR$/src/RecipeExtractor/RicardoCrawler.java" />
+        <option value="$PROJECT_DIR$/src/MachineLearning/IngredientReader.java" />
+        <option value="$PROJECT_DIR$/src/ExtracteurIngredients/IGACrawler.java" />
+        <option value="$PROJECT_DIR$/src/Optimisation/DAO.java" />
+        <option value="$PROJECT_DIR$/src/Optimisation/Main.java" />
       </list>
     </option>
   </component>
@@ -219,9 +204,10 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="2401" />
-    <option name="width" value="1272" />
-    <option name="height" value="698" />
+    <option name="x" value="2169" />
+    <option name="y" value="88" />
+    <option name="width" value="1252" />
+    <option name="height" value="696" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -231,7 +217,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
       <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
@@ -268,12 +253,19 @@
               <item name="ExtracteurIngrédients" type="b2602c69:ProjectViewProjectNode" />
               <item name="ExtracteurIngrédients" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Optimisation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ExtracteurIngrédients" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ExtracteurIngrédients" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="RecipeExtractor" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -304,7 +296,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.MachineLearningGUI">
+  <component name="RunManager" selected="Application.Main (1)">
     <configuration name="MachineLearningGUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="GUI.MachineLearningGUI" />
       <module name="ExtracteurIngrédients" />
@@ -326,6 +318,16 @@
       </extension>
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
+    </configuration>
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Optimisation.Main" />
+      <module name="ExtracteurIngrédients" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Optimisation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
     </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="RecipeExtractor.Main" />
@@ -477,9 +479,11 @@
       <item itemvalue="Application.Main" />
       <item itemvalue="Application.RecipeeReader" />
       <item itemvalue="Application.MachineLearningGUI" />
+      <item itemvalue="Application.Main (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.MachineLearningGUI" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main " />
@@ -569,7 +573,14 @@
       <option name="project" value="LOCAL" />
       <updated>1531512609316</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Starting the merging of components and recipe in order to link them for optimisation">
+      <created>1531759370009</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1531759370009</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -587,7 +598,7 @@
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.30885416" side_tool="true" weight="0.22573839" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.69114584" visible="true" weight="0.22484599" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.69114584" visible="true" weight="0.2587269" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
@@ -597,7 +608,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39978904" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.399384" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -668,11 +679,12 @@
     <MESSAGE value="Machine Learning classification works well" />
     <MESSAGE value="Classification des ingrédients en provenance d'iga" />
     <MESSAGE value="IGA's componnent classification + refactoring ingredient reader to use it with Ingredient class" />
-    <option name="LAST_COMMIT_MESSAGE" value="IGA's componnent classification + refactoring ingredient reader to use it with Ingredient class" />
+    <MESSAGE value="Starting the merging of components and recipe in order to link them for optimisation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Starting the merging of components and recipe in order to link them for optimisation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="7" />
     </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
@@ -680,55 +692,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/ExtracteurIngredients/TrieNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ExtracteurIngredients/IGACrawler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ExtracteurIngredients/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="22" column="26" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ExtracteurIngredients/IngredientCrawler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ExtracteurIngredients/Distance.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ExtracteurIngredients/Trie.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="884">
-          <caret line="56" selection-start-line="56" selection-end-line="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ExtracteurIngredients/DistanceNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ExtracteurIngredients/TrieNode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -920,38 +883,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MachineLearning/Classificator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="54" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ExtracteurIngredients/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
           <caret line="10" column="30" lean-forward="true" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MachineLearning/IngredientReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="58" selection-start-line="58" selection-end-line="58" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ExtracteurIngredients/IngredientCrawler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2058">
-          <caret line="106" column="46" selection-start-line="106" selection-start-column="46" selection-end-line="106" selection-end-column="46" />
-          <folding>
-            <element signature="e#3799#3800#0" expanded="true" />
-            <element signature="e#3853#3854#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -983,49 +918,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ExtracteurIngredients/MetroCrawler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1197">
-          <caret line="62" column="26" selection-start-line="62" selection-start-column="26" selection-end-line="62" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ExtracteurIngredients/Ingredient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="23" column="59" selection-start-line="23" selection-start-column="59" selection-end-line="23" selection-end-column="59" />
-          <folding>
-            <element signature="e#470#471#0" expanded="true" />
-            <element signature="e#538#539#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ExtracteurIngredients/IGACrawler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="17" column="145" selection-start-line="17" selection-start-column="145" selection-end-line="17" selection-end-column="145" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/RecipeExtractor/Recipe.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="15" column="43" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#333#334#0" expanded="true" />
-            <element signature="e#360#361#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/GUI/MachineLearningGUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
+        <state relative-caret-position="588">
           <caret line="47" selection-start-line="47" selection-end-line="47" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1040,15 +935,140 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/RecipeExtractor/RicardoCrawler.java">
+    <entry file="file://$PROJECT_DIR$/src/RecipeExtractor/Recipe.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="70" column="22" selection-start-line="70" selection-start-column="22" selection-end-line="70" selection-end-column="22" />
+        <state relative-caret-position="147">
+          <caret line="9" column="47" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#313#321#0" expanded="true" />
-            <element signature="e#373#381#0" expanded="true" />
-            <element signature="e#2284#2292#0" expanded="true" />
+            <element signature="e#235#236#0" expanded="true" />
+            <element signature="e#266#267#0" expanded="true" />
+            <element signature="e#293#294#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ExtracteurIngredients/MetroCrawler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1617">
+          <caret line="82" column="18" selection-start-line="82" selection-start-column="18" selection-end-line="82" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/RecipeExtractor/RicardoCrawler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1386">
+          <caret line="74" column="39" selection-start-line="74" selection-start-column="39" selection-end-line="74" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MachineLearning/Classificator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="54" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MachineLearning/IngredientReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="58" column="30" selection-start-line="58" selection-start-column="30" selection-end-line="58" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-9-jdk/lib/src.zip!/java.base/java/util/Locale.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="875" selection-start-line="875" selection-end-line="875" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/sqlite-jdbc-3.21.0.jar!/org/sqlite/JDBC.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="51" selection-start-line="51" selection-end-line="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-9-jdk/lib/src.zip!/java.base/java/lang/Class.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="290" selection-start-line="290" selection-end-line="290" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-9-jdk/lib/src.zip!/java.base/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="2531" selection-start-line="2531" selection-end-line="2531" />
+          <folding>
+            <element signature="e#101013#101014#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.db">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ExtracteurIngredients/Ingredient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="23" column="33" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
+          <folding>
+            <element signature="e#506#507#0" expanded="true" />
+            <element signature="e#537#538#0" expanded="true" />
+            <element signature="e#564#565#0" expanded="true" />
+            <element signature="e#596#597#0" expanded="true" />
+            <element signature="e#624#625#0" expanded="true" />
+            <element signature="e#656#657#0" expanded="true" />
+            <element signature="e#684#685#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ExtracteurIngredients/IngredientCrawler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="23" selection-start-line="22" selection-start-column="8" selection-end-line="23" />
+          <folding>
+            <element signature="e#349#350#0" expanded="true" />
+            <element signature="e#392#393#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Optimisation/DAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="131" lean-forward="true" selection-start-line="131" selection-end-line="131" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Optimisation/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="41" lean-forward="true" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ExtracteurIngredients/IGACrawler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="17" column="87" lean-forward="true" selection-start-line="17" selection-start-column="79" selection-end-line="17" selection-end-column="87" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

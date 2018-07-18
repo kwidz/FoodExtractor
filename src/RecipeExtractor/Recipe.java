@@ -6,6 +6,15 @@ import java.util.ArrayList;
 
 public class Recipe {
     ArrayList<String> composition;
+
+    public ArrayList<String> getComposition() {
+        return composition;
+    }
+
+    public String getName() {
+        return name;
+    }
+
     String name;
 
     public Recipe(String name, ArrayList<String> composition){

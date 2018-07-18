@@ -20,6 +20,23 @@ public class Ingredient {
     public String getName(){
         return name;
     }
+
+    public String getQuantite() {
+        return quantite;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public String getBrand() {
+        return brand;
+    }
+
+    public String getPrice() {
+        return price;
+    }
+
     public String toString(){
         return "nom : "+this.name+" type : "+this.type+" \n";
     }

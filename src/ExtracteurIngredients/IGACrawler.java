@@ -83,10 +83,10 @@ public class IGACrawler extends IngredientCrawler {
             Ingredient i = new Ingredient(name,new String( "0"),brand,price);
             i.setType(classificator.classify(i));
             allGroceryComponents.add(i);
-            System.out.println(i);
+            //System.out.println(i);
 
         }
-        System.out.println(divs.size());
+       // System.out.println(divs.size());
 
     }
 
