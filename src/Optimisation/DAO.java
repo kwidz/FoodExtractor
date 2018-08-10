@@ -19,10 +19,12 @@ Linking recipes with components !
 
  */
 public class DAO {
-    IngredientReader classificator;
+    private final IngredientReader classificator;
+    private final Connection connection;
     //instanciate DAO object
-    public DAO(){
+    public DAO(final Connection connection){
         classificator = new IngredientReader("/home/kwidz/Cours/Memoire Maitrise/ExtracteurIngrédients/src/MachineLearning/Meat.txt","/home/kwidz/Cours/Memoire Maitrise/ExtracteurIngrédients/src/MachineLearning/Modifiers.txt", "/home/kwidz/Cours/Memoire Maitrise/ExtracteurIngrédients/src/MachineLearning/Vegetables.txt", "/home/kwidz/Cours/Memoire Maitrise/ExtracteurIngrédients/src/MachineLearning/Forbiden.txt");
+        this.connection=connection;
 
     }
     public void insertDB(String name, String brand, String type, String price){
@@ -30,15 +32,15 @@ public class DAO {
     }
 
     public void createDB(){
-        Connection c = null;
+
         Statement stmt = null;
 
         try {
-            Class.forName("org.sqlite.JDBC");
-            c = DriverManager.getConnection("jdbc:sqlite:test.db");
+
+
             System.out.println("Opened database successfully");
 
-            stmt = c.createStatement();
+            stmt = connection.createStatement();
             String sql = "CREATE TABLE COMPONENTS " +
                     "(ID INTEGER PRIMARY KEY AUTOINCREMENT," +
                     " BRAND           TEXT    NOT NULL, " +
@@ -62,7 +64,7 @@ public class DAO {
             stmt.executeUpdate(sql);
             stmt.executeUpdate(sql2);
             stmt.close();
-            c.close();
+
         } catch ( Exception e ) {
             System.err.println( e.getClass().getName() + ": " + e.getMessage() );
             System.exit(0);
@@ -72,45 +74,43 @@ public class DAO {
 
     //Inserting a Component
     public void insertComponent(Ingredient component){
-        Connection c = null;
-        Statement stmt = null;
 
         try {
-            Class.forName("org.sqlite.JDBC");
-            c = DriverManager.getConnection("jdbc:sqlite:test.db");
-            c.setAutoCommit(false);
+            connection.setAutoCommit(false);
             //System.out.println("Opened database successfully");
 
-            stmt = c.createStatement();
-            String pattern = "\'";
-            String name = component.getName().replaceAll(pattern," ");
-            String brand = component.getBrand().replaceAll(pattern," ");
-            String sql = "INSERT INTO COMPONENTS (BRAND,NAME,TYPE,PRICE) " +
-                    "VALUES ('"+brand+"','"+name+"', '"+component.getType().replaceAll(pattern," ")+"', '"+component.getPrice()+"');";
+            Statement stmt = connection.createStatement();
 
-            stmt.executeUpdate(sql);
+            String name = component.getName().replaceAll("\'"," ");
+            String brand = component.getBrand().replaceAll("\'"," ");
+            stmt.executeUpdate(String.join(
+                "",
+                "INSERT INTO COMPONENTS (BRAND,NAME,TYPE,PRICE) ",
+                "VALUES ('", brand, "','", name, "', '", component.getType().replaceAll("\'"," "),
+                "', '", String.valueOf(component.getPrice()), "');"
+            ));
+
+
             stmt.close();
-            c.commit();
-            c.close();
-        } catch ( Exception e ) {
-            System.err.println( e.getClass().getName() + ": " + e.getMessage() );
-            System.exit(0);
+            connection.commit();
+
+        } catch ( final Exception e ) {
+            throw new Error(e);
+
         }
         //System.out.println("Records created successfully");
     }
 
     //Inserting a Recipe
     public void insertRecipe(Recipe r){
-        Connection c = null;
-        PreparedStatement stmt = null;
+
+
         int key = 0;
         try {
-            Class.forName("org.sqlite.JDBC");
-            c = DriverManager.getConnection("jdbc:sqlite:test.db");
-            c.setAutoCommit(false);
+            connection.setAutoCommit(false);
             //System.out.println("Opened database successfully");
-            String sql = "INSERT INTO RECIPE (NAME) VALUES (?);";
-            stmt = c.prepareStatement(sql);
+
+            PreparedStatement stmt = connection.prepareStatement("INSERT INTO RECIPE (NAME) VALUES (?);");
             String pattern = "\'";
             String name = r.getName().replaceAll(pattern," ");
             stmt.setString(1,name);
@@ -121,7 +121,7 @@ public class DAO {
             keys.close();
             stmt.close();
             String sql2 = "INSERT INTO COMPOSITION (IngredientType ,Quantity, id_Recipe) VALUES (?,?,?);";
-            PreparedStatement pstmt = c.prepareStatement(sql2,Statement.RETURN_GENERATED_KEYS);
+            PreparedStatement pstmt = connection.prepareStatement(sql2,Statement.RETURN_GENERATED_KEYS);
             for (String ingredient:r.getComposition()
                     ) {
                 pstmt.setString(1,classificator.classify(ingredient).replaceAll(pattern," "));
@@ -131,11 +131,10 @@ public class DAO {
             }
 
             pstmt.close();
-            c.commit();
-            c.close();
-        } catch ( Exception e ) {
-            System.err.println( e.getClass().getName() + ": " + e.getMessage() );
-            System.exit(0);
+            connection.commit();
+
+        } catch ( final Exception e ) {
+            throw new Error(e);
         }
         //System.out.println("Records created successfully");
     }
@@ -160,6 +159,61 @@ public class DAO {
 
         }
     }
+
+    public void selectAllREC(){
+
+
+        try {
+                Statement stmt  = connection.createStatement();
+                ResultSet rs    = stmt.executeQuery("SELECT * FROM RECIPE");
+
+            // loop through the result set
+            while (rs.next()) {
+                System.out.println(rs.getInt("id") +  "\t" +
+                        rs.getString("name") + "\t");
+            }
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
+        }
+    }
+    public void selectAllING(){
+
+
+        try {
+             Statement stmt  = connection.createStatement();
+             ResultSet rs    = stmt.executeQuery("SELECT AVG(PRICE), TYPE\n" +
+                     "    FROM COMPONENTS\n" +
+                     "GROUP BY TYPE;");
+
+            // loop through the result set
+            while (rs.next()) {
+                System.out.println(rs.getString(1) + "\t" +
+                        rs.getString(2));
+            }
+        } catch ( final SQLException e) {
+            throw new Error(e);
+        }
+    }
+    public void selectAllComposition(){
+
+
+        try {
+            Statement stmt  = connection.createStatement();
+            ResultSet rs    = stmt.executeQuery("SELECT  id, IngredientType, id_Recipe FROM Composition");
+
+            // loop through the result set
+            while (rs.next()) {
+                System.out.println(rs.getInt("id") +  "\t" +
+                        rs.getString("IngredientType") + "\t" +
+                        rs.getString("id_Recipe"));
+            }
+        } catch ( final SQLException e) {
+            throw new Error(e);
+        }
+    }
+
+
+
 
 
 }

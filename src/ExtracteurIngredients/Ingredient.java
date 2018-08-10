@@ -3,10 +3,11 @@ package ExtracteurIngredients;
 public class Ingredient {
 
 
-    String name, quantite, type, brand, price;
+    private String name, quantite, type, brand;
+    private float price;
 
 
-    public Ingredient(String name, String quantite, String brand, String price){
+    public Ingredient(String name, String quantite, String brand, float price){
         this.name = name;
         this.quantite= quantite;
 
@@ -33,7 +34,7 @@ public class Ingredient {
         return brand;
     }
 
-    public String getPrice() {
+    public float getPrice() {
         return price;
     }
 

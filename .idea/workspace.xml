@@ -1,21 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/Optimisation/DAO.java" line="147" />
+    <bookmark url="file://$PROJECT_DIR$/src/Optimisation/DAO.java" line="146" />
+    <bookmark url="file://$PROJECT_DIR$/src/ExtracteurIngredients/IGACrawler.java" line="77" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="54c89381-7bbd-4ac9-912e-6823bfa69154" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Optimisation/DAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Optimisation/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Optimisation/ParameterSetter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ExtracteurIngrédients/ExtracteurIngredients/IGACrawler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ExtracteurIngrédients/ExtracteurIngredients/IGACrawler.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ExtracteurIngredients/IGACrawler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ExtracteurIngredients/IGACrawler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ExtracteurIngredients/Ingredient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ExtracteurIngredients/Ingredient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ExtracteurIngredients/IngredientCrawler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ExtracteurIngredients/IngredientCrawler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ExtracteurIngredients/MetroCrawler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ExtracteurIngredients/MetroCrawler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MachineLearning/IngredientReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MachineLearning/IngredientReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RecipeExtractor/Recipe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RecipeExtractor/Recipe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RecipeExtractor/RicardoCrawler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RecipeExtractor/RicardoCrawler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Optimisation/DAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Optimisation/DAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Optimisation/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Optimisation/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test.db" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -35,11 +32,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="DAO.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="DAO.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Optimisation/DAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="131" lean-forward="true" selection-start-line="131" selection-end-line="131" />
+            <state relative-caret-position="420">
+              <caret line="186" lean-forward="true" selection-start-line="186" selection-end-line="186" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -48,10 +45,32 @@
         </entry>
       </file>
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Optimisation/Main.java">
+        <entry file="file://$PROJECT_DIR$/src/ExtracteurIngredients/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Recipe.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/RecipeExtractor/Recipe.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="231">
-              <caret line="11" column="41" lean-forward="true" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
+              <caret line="13" column="27" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
+              <folding>
+                <element signature="e#201#202#0" expanded="true" />
+                <element signature="e#235#236#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Optimisation/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -59,10 +78,19 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="ParameterSetter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Optimisation/ParameterSetter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="231">
+              <caret line="13" column="27" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="IngredientCrawler.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ExtracteurIngredients/IngredientCrawler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
+            <state relative-caret-position="336">
               <caret line="23" selection-start-line="22" selection-start-column="8" selection-end-line="23" />
               <folding>
                 <element signature="e#349#350#0" expanded="true" />
@@ -84,17 +112,8 @@
       <file leaf-file-name="Ingredient.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ExtracteurIngredients/Ingredient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="23" column="33" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
-              <folding>
-                <element signature="e#506#507#0" expanded="true" />
-                <element signature="e#537#538#0" expanded="true" />
-                <element signature="e#564#565#0" expanded="true" />
-                <element signature="e#596#597#0" expanded="true" />
-                <element signature="e#624#625#0" expanded="true" />
-                <element signature="e#656#657#0" expanded="true" />
-                <element signature="e#684#685#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="546">
+              <caret line="38" column="5" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -102,7 +121,7 @@
       <file leaf-file-name="IngredientReader.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MachineLearning/IngredientReader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="21">
+            <state relative-caret-position="1071">
               <caret line="58" column="30" selection-start-line="58" selection-start-column="30" selection-end-line="58" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -111,11 +130,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IGACrawler.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="IGACrawler.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ExtracteurIngredients/IGACrawler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="17" column="87" lean-forward="true" selection-start-line="17" selection-start-column="79" selection-end-line="17" selection-end-column="87" />
+            <state relative-caret-position="857">
+              <caret line="74" column="22" selection-start-line="74" selection-start-column="22" selection-end-line="74" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -149,6 +168,9 @@
       <find>allgr</find>
       <find>classificator</find>
       <find>syste</find>
+      <find>close</find>
+      <find>pater</find>
+      <find>c</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -188,15 +210,16 @@
         <option value="$PROJECT_DIR$/src/GUI/MachineLearningGUI.java" />
         <option value="$PROJECT_DIR$/src/MachineLearning/Forbiden.txt" />
         <option value="$PROJECT_DIR$/src/RecipeExtractor/Main.java" />
-        <option value="$PROJECT_DIR$/src/ExtracteurIngredients/Ingredient.java" />
         <option value="$PROJECT_DIR$/src/RecipeExtractor/Recipe.java" />
         <option value="$PROJECT_DIR$/src/ExtracteurIngredients/MetroCrawler.java" />
         <option value="$PROJECT_DIR$/src/ExtracteurIngredients/IngredientCrawler.java" />
         <option value="$PROJECT_DIR$/src/RecipeExtractor/RicardoCrawler.java" />
         <option value="$PROJECT_DIR$/src/MachineLearning/IngredientReader.java" />
+        <option value="$PROJECT_DIR$/src/ExtracteurIngredients/Ingredient.java" />
         <option value="$PROJECT_DIR$/src/ExtracteurIngredients/IGACrawler.java" />
-        <option value="$PROJECT_DIR$/src/Optimisation/DAO.java" />
         <option value="$PROJECT_DIR$/src/Optimisation/Main.java" />
+        <option value="$PROJECT_DIR$/src/Optimisation/ParameterSetter.java" />
+        <option value="$PROJECT_DIR$/src/Optimisation/DAO.java" />
       </list>
     </option>
   </component>
@@ -204,10 +227,8 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="2169" />
-    <option name="y" value="88" />
-    <option name="width" value="1252" />
-    <option name="height" value="696" />
+    <option name="width" value="1920" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -261,6 +282,10 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="RecipeExtractor" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="ExtracteurIngrédients" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -277,7 +302,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
-    <property name="settings.editor.selected.configurable" value="preferences.JavaFX" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -580,80 +605,87 @@
       <option name="project" value="LOCAL" />
       <updated>1531759370009</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Add all elements in bDD">
+      <created>1531940482437</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1531940482438</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="251000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1920" y="0" width="1920" height="1080" extended-state="6" />
+    <frame x="0" y="0" width="1920" height="1080" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.49947917" weight="0.3275154" />
-      <window_info anchor="right" id="Palette&#9;" order="3" />
-      <window_info id="Image Layers" order="2" />
-      <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.30885416" side_tool="true" weight="0.22573839" />
-      <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.69114584" visible="true" weight="0.2587269" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info id="Capture Tool" order="2" />
-      <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13072917" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Messages" order="8" sideWeight="0.49947917" weight="0.3275154" />
+      <window_info anchor="right" id="Palette&#9;" order="9" />
+      <window_info id="Image Layers" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.30885416" side_tool="true" weight="0.22573839" />
+      <window_info anchor="right" id="Maven Projects" order="5" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.69114584" visible="true" weight="0.2587269" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Terminal" order="12" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="Designer" order="1" />
+      <window_info content_ui="combo" id="Project" order="6" visible="true" weight="0.1421875" />
+      <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
-      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.399384" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Changes" order="7" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" id="Database" order="7" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="IDEtalk Messages" order="7" />
-      <window_info anchor="bottom" id="Application Servers" order="7" />
-      <window_info anchor="right" id="IDEtalk" order="3" />
+      <window_info anchor="bottom" id="IDEtalk Messages" order="9" />
+      <window_info anchor="bottom" id="Application Servers" order="11" />
+      <window_info anchor="right" id="IDEtalk" order="6" />
     </layout>
     <layout-to-restore>
-      <window_info anchor="bottom" id="Application Servers" order="7" />
-      <window_info id="Designer" order="2" />
+      <window_info anchor="bottom" id="Application Servers" order="11" />
+      <window_info id="Designer" order="1" />
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info id="Image Layers" order="3" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.69166666" weight="0.22597677" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.69114584" visible="true" weight="0.2587269" />
+      <window_info id="Image Layers" order="5" />
+      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Changes" order="8" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="13" />
-      <window_info id="Capture Tool" order="6" />
+      <window_info id="UI Designer" order="2" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Changes" order="7" />
+      <window_info id="Capture Tool" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.30833334" side_tool="true" weight="0.22597677" />
-      <window_info anchor="bottom" id="IDEtalk Messages" order="10" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.3284055" />
+      <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.30885416" side_tool="true" weight="0.22573839" />
+      <window_info anchor="bottom" id="IDEtalk Messages" order="9" />
+      <window_info anchor="bottom" id="Messages" order="8" sideWeight="0.49947917" weight="0.3275154" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13072917" />
-      <window_info anchor="bottom" id="Version Control" order="12" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="right" id="Maven Projects" order="5" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Terminal" order="12" />
+      <window_info content_ui="combo" id="Project" order="6" weight="0.1421875" />
       <window_info anchor="right" id="IDEtalk" order="6" />
       <window_info anchor="right" id="Database" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="8" />
-      <window_info anchor="right" id="Theme Preview" order="9" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="right" id="Palette&#9;" order="9" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.399384" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -680,7 +712,8 @@
     <MESSAGE value="Classification des ingrédients en provenance d'iga" />
     <MESSAGE value="IGA's componnent classification + refactoring ingredient reader to use it with Ingredient class" />
     <MESSAGE value="Starting the merging of components and recipe in order to link them for optimisation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Starting the merging of components and recipe in order to link them for optimisation" />
+    <MESSAGE value="Add all elements in bDD" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add all elements in bDD" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -692,13 +725,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/ExtracteurIngredients/TrieNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ExtracteurIngredients/IGACrawler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="816">
@@ -883,13 +909,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ExtracteurIngredients/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="10" column="30" lean-forward="true" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/MachineLearning/Meat.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="441">
@@ -922,29 +941,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="588">
           <caret line="47" selection-start-line="47" selection-end-line="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/RecipeExtractor/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" column="44" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/RecipeExtractor/Recipe.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="9" column="47" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#235#236#0" expanded="true" />
-            <element signature="e#266#267#0" expanded="true" />
-            <element signature="e#293#294#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -959,26 +955,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1386">
           <caret line="74" column="39" selection-start-line="74" selection-start-column="39" selection-end-line="74" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MachineLearning/Classificator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="54" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MachineLearning/IngredientReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="58" column="30" selection-start-line="58" selection-start-column="30" selection-end-line="58" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1007,34 +983,39 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="178">
           <caret line="2531" selection-start-line="2531" selection-end-line="2531" />
-          <folding>
-            <element signature="e#101013#101014#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test.db">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ExtracteurIngredients/Ingredient.java">
+    <entry file="file://$PROJECT_DIR$/src/RecipeExtractor/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="23" column="33" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
+        <state relative-caret-position="147">
+          <caret line="7" column="36" lean-forward="true" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MachineLearning/IngredientReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1071">
+          <caret line="58" column="30" selection-start-line="58" selection-start-column="30" selection-end-line="58" selection-end-column="30" />
           <folding>
-            <element signature="e#506#507#0" expanded="true" />
-            <element signature="e#537#538#0" expanded="true" />
-            <element signature="e#564#565#0" expanded="true" />
-            <element signature="e#596#597#0" expanded="true" />
-            <element signature="e#624#625#0" expanded="true" />
-            <element signature="e#656#657#0" expanded="true" />
-            <element signature="e#684#685#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MachineLearning/Classificator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="54" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="54" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ExtracteurIngredients/IngredientCrawler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
+        <state relative-caret-position="336">
           <caret line="23" selection-start-line="22" selection-start-column="8" selection-end-line="23" />
           <folding>
             <element signature="e#349#350#0" expanded="true" />
@@ -1043,10 +1024,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Optimisation/DAO.java">
+    <entry file="file://$PROJECT_DIR$/src/ExtracteurIngredients/IGACrawler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="131" lean-forward="true" selection-start-line="131" selection-end-line="131" />
+        <state relative-caret-position="857">
+          <caret line="74" column="22" selection-start-line="74" selection-start-column="22" selection-end-line="74" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1055,18 +1036,50 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Optimisation/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="11" column="41" lean-forward="true" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
+        <state relative-caret-position="378">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ExtracteurIngredients/IGACrawler.java">
+    <entry file="file://$PROJECT_DIR$/src/Optimisation/ParameterSetter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="17" column="87" lean-forward="true" selection-start-line="17" selection-start-column="79" selection-end-line="17" selection-end-column="87" />
+        <state relative-caret-position="231">
+          <caret line="13" column="27" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/RecipeExtractor/Recipe.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="13" column="27" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
+          <folding>
+            <element signature="e#201#202#0" expanded="true" />
+            <element signature="e#235#236#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ExtracteurIngredients/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ExtracteurIngredients/Ingredient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="38" column="5" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Optimisation/DAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="186" lean-forward="true" selection-start-line="186" selection-end-line="186" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

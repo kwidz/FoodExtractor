@@ -6,6 +6,8 @@ import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
 import java.io.IOException;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class IGACrawler extends IngredientCrawler {
 
@@ -52,7 +54,8 @@ public class IGACrawler extends IngredientCrawler {
             String brand="";
             String type="";
             String name="";
-            String price="";
+            float price=0f;
+            Pattern pattern = Pattern.compile("\\d+(,\\d+)?");
 
             Elements productDetails = product.getAllElements();
 
@@ -68,16 +71,18 @@ public class IGACrawler extends IngredientCrawler {
                     name=e.text();
 
                 }
-                if(e.hasClass("item-product__price")){
+                if(e.hasClass("item-product__price")||e.hasClass("item-product__price--sale")){
                     //System.out.println("Price :" +  e.text());
-                   // System.out.println("##############################");
-                    price=e.text();
-                }
-                if(e.hasClass("item-product__price--sale")){
-                    //System.out.println("Price (sale) :" +  e.text());
-                    price=e.text();
+                    final Matcher matcher = pattern.matcher(e.text());
+                    if(matcher.find())
+                        price=Float.parseFloat(matcher.group(0).replace(',','.'));
+                    else{
+                        System.out.println(e.text());
+                    }
 
                 }
+
+
 
             }
             Ingredient i = new Ingredient(name,new String( "0"),brand,price);
