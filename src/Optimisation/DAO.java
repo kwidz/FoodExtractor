@@ -160,25 +160,26 @@ public class DAO {
         }
     }
 
-    public void selectAllREC(){
+    public ArrayList<Optimisation.Recipe> selectAllREC(){
 
-
+    ArrayList<Optimisation.Recipe> recipes = new ArrayList<>();
         try {
                 Statement stmt  = connection.createStatement();
                 ResultSet rs    = stmt.executeQuery("SELECT * FROM RECIPE");
 
             // loop through the result set
             while (rs.next()) {
-                System.out.println(rs.getInt("id") +  "\t" +
-                        rs.getString("name") + "\t");
+                recipes.add(new Optimisation.Recipe(rs.getInt("id"),rs.getString("name")));
+
             }
         } catch (SQLException e) {
             System.out.println(e.getMessage());
         }
+        return recipes;
     }
-    public void selectAllING(){
+    public ArrayList<Optimisation.Ingredient> selectAllING(){
 
-
+        ArrayList<Optimisation.Ingredient> allING=new ArrayList<>();
         try {
              Statement stmt  = connection.createStatement();
              ResultSet rs    = stmt.executeQuery("SELECT AVG(PRICE), TYPE\n" +
@@ -186,16 +187,21 @@ public class DAO {
                      "GROUP BY TYPE;");
 
             // loop through the result set
+            int id=0;
             while (rs.next()) {
-                System.out.println(rs.getString(1) + "\t" +
-                        rs.getString(2));
+                allING.add(new Optimisation.Ingredient(rs.getString(2),rs.getFloat(1), ++id));
+
+
             }
         } catch ( final SQLException e) {
             throw new Error(e);
         }
-    }
-    public void selectAllComposition(){
 
+        return allING;
+    }
+
+    public ArrayList<Composition> selectAllComposition(){
+        ArrayList<Composition> compos = new ArrayList<>();
 
         try {
             Statement stmt  = connection.createStatement();
@@ -203,13 +209,13 @@ public class DAO {
 
             // loop through the result set
             while (rs.next()) {
-                System.out.println(rs.getInt("id") +  "\t" +
-                        rs.getString("IngredientType") + "\t" +
-                        rs.getString("id_Recipe"));
+
+                compos.add(new Composition(rs.getInt("id_Recipe"),rs.getString("IngredientType")));
             }
         } catch ( final SQLException e) {
             throw new Error(e);
         }
+        return compos;
     }
 
 

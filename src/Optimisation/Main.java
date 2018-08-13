@@ -15,7 +15,7 @@ public class Main {
 
         final DAO dao = new DAO(connection);
         final ParameterSetter p = new ParameterSetter(dao);
-        p.setREC();
+        p.ParameterFile();
 
         //dao.createDB();
         //System.out.println("test");
