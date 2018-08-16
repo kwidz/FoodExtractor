@@ -1,42 +1,159 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/Optimisation/DAO.java" line="146" />
-    <bookmark url="file://$PROJECT_DIR$/src/ExtracteurIngredients/IGACrawler.java" line="77" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="54c89381-7bbd-4ac9-912e-6823bfa69154" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Optimisation/Composition.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Optimisation/Ingredient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Optimisation/ParametersSample" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Optimisation/Recipe.java" afterDir="false" />
+    <list default="true" id="78edda4e-9f3c-4de3-bb93-7a1387467839" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/http/HelloWorldController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/description.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/jsoup_1_11_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/sqlite_jdbc_3_21_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/project-template.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Optimisation/DAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Optimisation/DAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Optimisation/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Optimisation/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Optimisation/ParameterSetter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Optimisation/ParameterSetter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExtracteurIngrédients.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ExtracteurIngrédients.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jsoup-1.11.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ExtracteurIngrédients/ExtracteurIngredients/Distance.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ExtracteurIngrédients/ExtracteurIngredients/DistanceNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ExtracteurIngrédients/ExtracteurIngredients/IGACrawler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ExtracteurIngrédients/ExtracteurIngredients/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ExtracteurIngrédients/ExtracteurIngredients/Trie.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ExtracteurIngrédients/ExtracteurIngredients/TrieNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sqlite-jdbc-3.21.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ExtracteurIngredients/Distance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/math/Math.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ExtracteurIngredients/DistanceNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/math/DistanceNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ExtracteurIngredients/IGACrawler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/crawler/IGACrawler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ExtracteurIngredients/Ingredient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/data/Ingredient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ExtracteurIngredients/IngredientCrawler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/crawler/IngredientCrawler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ExtracteurIngredients/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ExtracteurIngredients/MetroCrawler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/crawler/MetroCrawler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ExtracteurIngredients/Trie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/math/Trie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ExtracteurIngredients/TrieNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/math/TrieNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GUI/MachineLearningGUI.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/MachineLearningGUI.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GUI/MachineLearningGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/MachineLearningGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MachineLearning/Classificator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MachineLearning/Forbiden.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Forbiden.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MachineLearning/IngredientReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/machinelearning/IngredientReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MachineLearning/Meat.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Meat.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MachineLearning/Modifiers.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Modifiers.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MachineLearning/Vegetables.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Vegetables.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Optimisation/Composition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/data/Composition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Optimisation/DAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/database/DAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Optimisation/Ingredient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/data/IngredientParameter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Optimisation/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Optimisation/ParameterSetter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/database/ParameterSetter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Optimisation/ParametersSample" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ParametersSample" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Optimisation/Recipe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/data/RecipeParameter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RecipeExtractor/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RecipeExtractor/Recipe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/data/Recipe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RecipeExtractor/RicardoCrawler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/crawler/RicardoCrawler.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
-    <ignored path=".idea/dataSources.local.xml" />
+    <ignored path="$PROJECT_DIR$/.gradle/" />
+    <ignored path="$PROJECT_DIR$/build/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="CreatePatchCommitExecutor">
-    <option name="PATCH_PATH" value="" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
   </component>
-  <component name="FavoritesManager">
-    <favorites_list name="ExtracteurIngrédients" />
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ExtracteurIngrédients" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ExtracteurIngrédients" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ExtracteurIngrédients" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ExtracteurIngrédients" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build setup" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ExtracteurIngrédients" type="f1a62948:ProjectNode" />
+                <item name="Run Configurations" type="7b0102dc:RunConfigurationsNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-1130670513">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.3" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="gradle" value="1" />
+          <entry key="java" value="26" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Groovy" value="1" />
+          <entry key="JAVA" value="26" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="gradle" value="74" />
+          <entry key="java" value="566" />
+          <entry key="txt" value="13" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Groovy" value="74" />
+          <entry key="JAVA" value="566" />
+          <entry key="PLAIN_TEXT" value="13" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="DAO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Optimisation/DAO.java">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/crawler/IngredientCrawler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="317">
-              <caret line="212" column="63" selection-start-line="212" selection-start-column="63" selection-end-line="212" selection-end-column="63" />
+            <state relative-caret-position="210">
+              <caret line="10" column="20" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -44,76 +161,95 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Composition.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Optimisation/Composition.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/machinelearning/IngredientReader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+            <state relative-caret-position="82">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
               <folding>
-                <element signature="e#316#317#0" expanded="true" />
-                <element signature="e#353#354#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Ingredient.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Optimisation/Ingredient.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/http/HelloWorldController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+            <state relative-caret-position="378">
+              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
               <folding>
-                <element signature="e#135#136#0" expanded="true" />
-                <element signature="e#160#161#0" expanded="true" />
-                <element signature="e#140#141#0" expanded="true" />
-                <element signature="e#167#168#0" expanded="true" />
-                <element signature="e#198#199#0" expanded="true" />
-                <element signature="e#226#227#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#342#343#0" expanded="true" />
+                <element signature="e#378#379#0" expanded="true" />
+                <element signature="e#482#483#0" expanded="true" />
+                <element signature="e#520#521#0" expanded="true" />
+                <element signature="e#719#720#0" expanded="true" />
+                <element signature="e#799#800#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ExtracteurIngredients/Main.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/data/Ingredient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+            <state relative-caret-position="654">
+              <caret line="44" column="5" lean-forward="true" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Recipe.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/RecipeExtractor/Recipe.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/Application.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="147">
+              <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/crawler/MetroCrawler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="147">
+              <caret line="13" column="30" lean-forward="true" selection-start-line="13" selection-start-column="30" selection-end-line="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/crawler/IGACrawler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="88" column="18" selection-start-line="88" selection-start-column="18" selection-end-line="88" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/database/ParameterSetter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1113">
+              <caret line="55" column="32" selection-start-line="55" selection-start-column="32" selection-end-line="55" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/database/DAO.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="231">
-              <caret line="13" column="27" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
-              <folding>
-                <element signature="e#201#202#0" expanded="true" />
-                <element signature="e#235#236#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Recipe.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Optimisation/Recipe.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-              <folding>
-                <element signature="e#127#128#0" expanded="true" />
-                <element signature="e#152#153#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Optimisation/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+              <caret line="199" selection-start-line="199" selection-end-line="199" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -121,32 +257,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ParameterSetter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Optimisation/ParameterSetter.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/data/RecipeParameter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="562">
-              <caret line="66" column="45" selection-start-line="66" selection-start-column="45" selection-end-line="66" selection-end-column="45" />
+            <state relative-caret-position="546">
+              <caret line="26" column="19" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#386#387#0" expanded="true" />
+                <element signature="e#411#412#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Repas.cdat" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Optimisation/Repas.cdat">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="269">
-              <caret line="290" column="76" lean-forward="true" selection-end-line="304" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ParametersSample" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Optimisation/ParametersSample">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -156,172 +276,592 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="FxmlFile" />
         <option value="Class" />
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>best</find>
-      <find>jdbc</find>
-      <find>trie</find>
-      <find>*</find>
-      <find>&quot;</find>
-      <find>,</find>
-      <find />
-      <find>content</find>
-      <find>findVegetable</find>
-      <find>FOOD</find>
-      <find>all</find>
-      <find>allgr</find>
-      <find>classificator</find>
-      <find>syste</find>
-      <find>close</find>
-      <find>pater</find>
-      <find>c</find>
-    </findStrings>
-  </component>
   <component name="Git.Settings">
-    <option name="PREVIOUS_COMMIT_AUTHORS">
-      <list>
-        <option value="ys" />
-      </list>
-    </option>
-    <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="myGradleHomes">
+      <map>
+        <entry key="$PROJECT_DIR$" value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-bin/e9cinqnqvph59rr7g70qubb4t/gradle-4.9" />
+      </map>
+    </option>
+    <option name="myGradleVersions">
+      <map>
+        <entry key="$PROJECT_DIR$" value="4.9" />
+      </map>
+    </option>
+    <option name="availableProjects">
+      <map>
+        <entry>
+          <key>
+            <ExternalProjectPojo>
+              <option name="name" value="ExtracteurIngrédients" />
+              <option name="path" value="$PROJECT_DIR$" />
+            </ExternalProjectPojo>
+          </key>
+          <value>
+            <list>
+              <ExternalProjectPojo>
+                <option name="name" value="ExtracteurIngrédients" />
+                <option name="path" value="$PROJECT_DIR$" />
+              </ExternalProjectPojo>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="availableTasks">
+      <map>
+        <entry key="$PROJECT_DIR$">
+          <value>
+            <list>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the components produced by root project 'ExtracteurIngrédients'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="components" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects that depend on it." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="buildDependents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="cleanEclipseClasspath" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the sub-projects of root project 'ExtracteurIngrédients'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="projects" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Cleans all Eclipse files." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="cleanEclipse" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles main classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="classes" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the dependent components of components in root project 'ExtracteurIngrédients'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="dependentComponents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays all buildscript dependencies declared in root project 'ExtracteurIngrédients'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="buildEnvironment" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="cleanEclipseProject" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates Gradle wrapper files." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="wrapper" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles test classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="testClasses" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates Javadoc API documentation for the main source code." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="javadoc" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles an executable jar archive containing the main classes and their dependencies." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="bootJar" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates the Eclipse classpath file." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="eclipseClasspath" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles a jar archive containing the main classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="jar" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the configuration model of root project 'ExtracteurIngrédients'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="model" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Processes main resources." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="processResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the tasks runnable from root project 'ExtracteurIngrédients'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="tasks" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="cleanEclipseJdt" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Initializes a new Gradle build." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="init" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs the unit tests." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="test" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the dependency management declared in root project 'ExtracteurIngrédients'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="dependencyManagement" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs this project as a Spring Boot application." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="bootRun" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles main Java source." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="compileJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the insight into a specific dependency in root project 'ExtracteurIngrédients'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="dependencyInsight" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs all checks." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="check" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles the outputs of this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="assemble" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Deletes the build directory." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="clean" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles test Java source." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="compileTestJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays all dependencies declared in root project 'ExtracteurIngrédients'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="dependencies" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates all Eclipse files." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="eclipse" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Processes test resources." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="processTestResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays a help message." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="help" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates the Eclipse JDT settings file." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="eclipseJdt" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="build" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects it depends on." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="buildNeeded" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates the Eclipse project file." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="eclipseProject" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the properties of root project 'ExtracteurIngrédients'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="properties" />
+              </ExternalTaskPojo>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="modificationStamps">
+      <map>
+        <entry key="$PROJECT_DIR$" value="6137795696000" />
+        <entry key="$PROJECT_DIR$/.gradle" value="0" />
+        <entry key="$PROJECT_DIR$/build.gradle" value="3991878051" />
+        <entry key="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" value="2371942159" />
+        <entry key="$PROJECT_DIR$/settings.gradle" value="2243902038" />
+      </map>
+    </option>
+    <option name="projectBuildClasspath">
+      <map>
+        <entry key="$PROJECT_DIR$">
+          <value>
+            <ExternalProjectBuildClasspathPojo>
+              <option name="modulesBuildClasspath">
+                <map>
+                  <entry key="$PROJECT_DIR$">
+                    <value>
+                      <ExternalModuleBuildClasspathPojo>
+                        <option name="entries">
+                          <list>
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-gradle-plugin/2.0.4.RELEASE/b18a052691327096ba583b11d5fc052123500db3/spring-boot-gradle-plugin-2.0.4.RELEASE.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-loader-tools/2.0.4.RELEASE/24a1d9eac0090e12d20678cfbf7299d81d63ea7/spring-boot-loader-tools-2.0.4.RELEASE.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.spring.gradle/dependency-management-plugin/1.0.6.RELEASE/c7118365d75bca698892b5df1e683b8d6d6b87bb/dependency-management-plugin-1.0.6.RELEASE.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/5.0.8.RELEASE/dc39c49e3246cdf73d3786ac41119140aed3fa08/spring-core-5.0.8.RELEASE.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-compress/1.14/7b18320d668ab080758bf5383d6d8fcf750babce/commons-compress-1.14.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-jcl/5.0.8.RELEASE/a1fa8fb560fb252321776e16bc9ac8201af4ef5e/spring-jcl-5.0.8.RELEASE.jar" />
+                          </list>
+                        </option>
+                        <option name="path" value="$PROJECT_DIR$" />
+                      </ExternalModuleBuildClasspathPojo>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+              <option name="name" value="ExtracteurIngrédients" />
+              <option name="projectBuildClasspath">
+                <list>
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/src/resources-s3" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/src/base-services-groovy" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/src/model-core" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/src/jacoco" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/src/tooling-api" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/src/maven" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/src/native" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/src/resources-http" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/src/internal-integ-testing" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/src/platform-base" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/src/ide-native" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/src/platform-native" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/src/testing-jvm" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/src/javascript" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/src/ear" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/src/platform-jvm" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/src/persistent-cache" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/src/language-jvm" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/src/announce" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/src/wrapper" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/src/testing-base" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/src/ide-play" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/src/cli" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/src/code-quality" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/src/resources-sftp" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/src/language-native" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/src/ide" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/src/jvm-services" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/src/version-control" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/src/plugin-use" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/src/build-comparison" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/src/composite-builds" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/src/test-kit" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/src/launcher" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/src/antlr" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/src/resources" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/src/build-cache" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/src/signing" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/src/plugins" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/src/workers" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/src/core" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/src/base-services" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/src/process-services" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/src/plugin-development" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/src/tooling-api-builders" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/src/language-scala" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/src/language-java" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/src/language-groovy" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/src/build-option" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/src/resources-gcs" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/src/internal-testing" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/src/testing-native" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/src/publish" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/src/messaging" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/src/reporting" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/src/ivy" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/src/platform-play" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/src/internal-performance-testing" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/src/build-init" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/src/testing-junit-platform" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/src/osgi" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/src/build-cache-http" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/src/core-api" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/src/internal-android-performance-testing" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/src/logging" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/src/dependency-management" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/src/installation-beacon" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/src/scala" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/src/diagnostics" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/src/model-groovy" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/lib/gradle-core-4.9.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/lib/gradle-core-api-4.9.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/lib/gradle-kotlin-dsl-0.18.4.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/lib/gradle-native-4.9.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/lib/gradle-tooling-api-4.9.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/lib/gradle-jvm-services-4.9.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/lib/groovy-all-2.4.12.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/lib/ant-1.9.11.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/lib/gradle-base-services-groovy-4.9.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/lib/gradle-docs-4.9.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/lib/gradle-wrapper-4.9.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/lib/gradle-build-option-4.9.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/lib/gradle-base-services-4.9.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/lib/ant-launcher-1.9.11.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/lib/gradle-kotlin-dsl-provider-plugins-0.18.4.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/lib/gradle-logging-4.9.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/lib/gradle-process-services-4.9.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/lib/gradle-launcher-4.9.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/lib/gradle-kotlin-dsl-tooling-builders-0.18.4.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/lib/gradle-runtime-api-info-4.9.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/lib/gradle-kotlin-dsl-tooling-models-0.18.4.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/lib/gradle-model-core-4.9.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/lib/gradle-model-groovy-4.9.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/lib/gradle-installation-beacon-4.9.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/lib/gradle-resources-4.9.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/lib/gradle-build-cache-4.9.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/lib/gradle-persistent-cache-4.9.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/lib/gradle-cli-4.9.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/lib/gradle-messaging-4.9.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/lib/plugins/gradle-announce-4.9.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/lib/plugins/gradle-platform-base-4.9.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/lib/plugins/gradle-ide-native-4.9.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/lib/plugins/gradle-language-jvm-4.9.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/lib/plugins/gradle-testing-base-4.9.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/lib/plugins/gradle-workers-4.9.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/lib/plugins/gradle-language-native-4.9.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/lib/plugins/gradle-ear-4.9.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/lib/plugins/gradle-maven-4.9.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/lib/plugins/gradle-code-quality-4.9.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/lib/plugins/gradle-resources-sftp-4.9.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/lib/plugins/gradle-build-comparison-4.9.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/lib/plugins/gradle-antlr-4.9.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/lib/plugins/gradle-platform-play-4.9.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/lib/plugins/gradle-plugin-development-4.9.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/lib/plugins/gradle-ivy-4.9.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/lib/plugins/gradle-reporting-4.9.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/lib/plugins/gradle-jacoco-4.9.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/lib/plugins/gradle-build-cache-http-4.9.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/lib/plugins/gradle-platform-native-4.9.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/lib/plugins/gradle-composite-builds-4.9.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/lib/plugins/gradle-javascript-4.9.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/lib/plugins/gradle-osgi-4.9.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/lib/plugins/gradle-language-scala-4.9.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/lib/plugins/gradle-test-kit-4.9.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/lib/plugins/gradle-publish-4.9.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/lib/plugins/gradle-tooling-api-builders-4.9.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/lib/plugins/gradle-scala-4.9.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/lib/plugins/gradle-language-groovy-4.9.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/lib/plugins/gradle-plugin-use-4.9.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/lib/plugins/gradle-diagnostics-4.9.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/lib/plugins/gradle-resources-s3-4.9.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/lib/plugins/gradle-signing-4.9.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/lib/plugins/gradle-testing-junit-platform-4.9.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/lib/plugins/gradle-testing-jvm-4.9.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/lib/plugins/gradle-ide-4.9.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/lib/plugins/gradle-build-init-4.9.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/lib/plugins/gradle-platform-jvm-4.9.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/lib/plugins/gradle-version-control-4.9.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/lib/plugins/ivy-2.2.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/lib/plugins/gradle-ide-play-4.9.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/lib/plugins/gradle-plugins-4.9.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/lib/plugins/gradle-resources-gcs-4.9.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/lib/plugins/gradle-language-java-4.9.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/lib/plugins/gradle-dependency-management-4.9.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/lib/plugins/gradle-testing-native-4.9.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.9-all/491wbe0x5d54n9cojs2p0zv90/gradle-4.9/lib/plugins/gradle-resources-http-4.9.jar" />
+                </list>
+              </option>
+            </ExternalProjectBuildClasspathPojo>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="projectSyncType">
+      <map>
+        <entry key="$PROJECT_DIR$" value="RE_IMPORT" />
+      </map>
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/ca/uqac/Crawler.java" />
-        <option value="$PROJECT_DIR$/src/ca/uqac/BasicsIngredient.java" />
-        <option value="$PROJECT_DIR$/src/ca/uqac/TrieNode.java" />
-        <option value="$PROJECT_DIR$/src/ca/uqac/DYMNode.java" />
-        <option value="$PROJECT_DIR$/src/ca/uqac/DistanceNode.java" />
-        <option value="$PROJECT_DIR$/src/ca/uqac/Distance.java" />
-        <option value="$PROJECT_DIR$/src/ca/uqac/Trie.java" />
-        <option value="$PROJECT_DIR$/src/ca/uqac/Main.java" />
-        <option value="$PROJECT_DIR$/src/ca/uqac/IGACrawler.java" />
-        <option value="$PROJECT_DIR$/src/ExtracteurIngredients/SQLiteJDBC.java" />
-        <option value="$PROJECT_DIR$/src/ExtracteurIngredients/Crawler.java" />
-        <option value="$PROJECT_DIR$/src/ExtracteurIngredients/RicardoCrawler.java" />
-        <option value="$PROJECT_DIR$/src/MachineLearning/Reader.java" />
-        <option value="$PROJECT_DIR$/src/MachineLearning/RecipeeReader.java" />
-        <option value="$PROJECT_DIR$/src/GUI/MachineLearningWindow.form" />
-        <option value="$PROJECT_DIR$/src/GUI/MachineLearningGUI.fxml" />
-        <option value="$PROJECT_DIR$/src/GUI/test.form" />
-        <option value="$PROJECT_DIR$/src/MachineLearning/Classificator.java" />
-        <option value="$PROJECT_DIR$/src/MachineLearning/Meat.txt" />
-        <option value="$PROJECT_DIR$/src/MachineLearning/Modifiers.txt" />
-        <option value="$PROJECT_DIR$/src/MachineLearning/Vegetables.txt" />
-        <option value="$PROJECT_DIR$/src/ExtracteurIngredients/Main.java" />
-        <option value="$PROJECT_DIR$/src/GUI/MachineLearningGUI.java" />
-        <option value="$PROJECT_DIR$/src/MachineLearning/Forbiden.txt" />
-        <option value="$PROJECT_DIR$/src/RecipeExtractor/Main.java" />
-        <option value="$PROJECT_DIR$/src/RecipeExtractor/Recipe.java" />
-        <option value="$PROJECT_DIR$/src/ExtracteurIngredients/MetroCrawler.java" />
-        <option value="$PROJECT_DIR$/src/ExtracteurIngredients/IngredientCrawler.java" />
-        <option value="$PROJECT_DIR$/src/RecipeExtractor/RicardoCrawler.java" />
-        <option value="$PROJECT_DIR$/src/MachineLearning/IngredientReader.java" />
-        <option value="$PROJECT_DIR$/src/ExtracteurIngredients/Ingredient.java" />
-        <option value="$PROJECT_DIR$/src/ExtracteurIngredients/IGACrawler.java" />
-        <option value="$PROJECT_DIR$/src/Optimisation/Recipes.java" />
-        <option value="$PROJECT_DIR$/src/Optimisation/Composition.java" />
-        <option value="$PROJECT_DIR$/src/Optimisation/Main.java" />
-        <option value="$PROJECT_DIR$/src/Optimisation/Repas.cdat" />
-        <option value="$PROJECT_DIR$/src/Optimisation/Ingredient.java" />
-        <option value="$PROJECT_DIR$/src/Optimisation/DAO.java" />
-        <option value="$PROJECT_DIR$/src/Optimisation/ParameterSetter.java" />
-        <option value="$PROJECT_DIR$/src/Optimisation/ParametersSample" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/Application.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/math/Distance.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/math/DistanceNode.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/math/Trie.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/data/Composition.java" />
+        <option value="$PROJECT_DIR$/src/Optimisation/IngredientParameter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/data/IngredientParameter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/crawler/RicardoCrawler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/data/RecipeParameter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/database/DAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/database/ParameterSetter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/crawler/IngredientCrawler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/crawler/IGACrawler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/machinelearning/IngredientReader.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/crawler/MetroCrawler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/data/Recipe.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/http/HelloWorldController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/data/Ingredient.java" />
       </list>
     </option>
   </component>
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-  </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="822" />
-    <option name="width" value="1430" />
-    <option name="height" value="791" />
-  </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
+    <option name="x" value="296" />
+    <option name="width" value="1910" />
+    <option name="height" value="1053" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
+      <flattenPackages ProjectPane="true" />
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="ExtracteurIngrédients" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ExtracteurIngrédients" type="462c0819:PsiDirectoryNode" />
+              <item name="ExtracteurIngrédients" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
               <item name="ExtracteurIngrédients" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ExtracteurIngrédients" type="462c0819:PsiDirectoryNode" />
+              <item name="ExtracteurIngrédients" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ExtracteurIngrédients" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ExtracteurIngrédients" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+              <item name="libs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ExtracteurIngrédients" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ExtracteurIngrédients" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ExtracteurIngrédients" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ExtracteurIngrédients" type="462c0819:PsiDirectoryNode" />
+              <item name="ExtracteurIngrédients" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="ExtracteurIngredients" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
               <item name="ExtracteurIngrédients" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ExtracteurIngrédients" type="462c0819:PsiDirectoryNode" />
+              <item name="ExtracteurIngrédients" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="GUI" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ExtracteurIngrédients" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ExtracteurIngrédients" type="462c0819:PsiDirectoryNode" />
+              <item name="ExtracteurIngrédients" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="MachineLearning" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="recipeoptimizer" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ExtracteurIngrédients" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ExtracteurIngrédients" type="462c0819:PsiDirectoryNode" />
+              <item name="ExtracteurIngrédients" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Optimisation" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="crawler" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ExtracteurIngrédients" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ExtracteurIngrédients" type="462c0819:PsiDirectoryNode" />
+              <item name="ExtracteurIngrédients" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="RecipeExtractor" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ExtracteurIngrédients" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="ExtracteurIngrédients" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ExtracteurIngrédients" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ExtracteurIngrédients" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="http" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ExtracteurIngrédients" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ExtracteurIngrédients" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="machinelearning" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ExtracteurIngrédients" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ExtracteurIngrédients" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="math" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ExtracteurIngrédients" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ExtracteurIngrédients" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="FullScreen" value="false" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/sqlite-jdbc-3.21.0.jar!/" />
-    <property name="project.structure.last.edited" value="SDKs" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="recentsLimit" value="5" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534457035694" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="ca.uqac" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+      <recent name="$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/machinelearning" />
+      <recent name="$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/data" />
+      <recent name="$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/crawler" />
+      <recent name="$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/database" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -336,198 +876,91 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main (1)">
-    <configuration name="MachineLearningGUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="GUI.MachineLearningGUI" />
-      <module name="ExtracteurIngrédients" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="GUI.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+  <component name="RunManager" selected="Gradle.ExtracteurIngrédients [bootJar]">
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="Main " type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="ExtracteurIngredients.Main" />
-      <module name="ExtracteurIngrédients" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="RecipeExtractor.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
+    <configuration name="ExtracteurIngrédients [bootJar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="bootJar" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method v="2" />
     </configuration>
-    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Optimisation.Main" />
-      <module name="ExtracteurIngrédients" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Optimisation.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+    <configuration name="ExtracteurIngrédients [bootRun]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="bootRun" />
+          </list>
+        </option>
+        <option name="vmOptions" value="" />
+      </ExternalSystemSettings>
+      <method v="2" />
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="RecipeExtractor.Main" />
-      <module name="ExtracteurIngrédients" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="RecipeExtractor.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+    <configuration name="ExtracteurIngrédients [idea]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="idea" />
+          </list>
+        </option>
+        <option name="vmOptions" value="" />
+      </ExternalSystemSettings>
+      <method v="2" />
     </configuration>
-    <configuration name="RecipeeReader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MachineLearning.RecipeeReader" />
-      <module name="ExtracteurIngrédients" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="MachineLearning.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
-      <module name="" />
-      <option name="ACTIVITY_CLASS" value="" />
-      <option name="MODE" value="default_activity" />
-      <option name="DEPLOY" value="true" />
-      <option name="ARTIFACT_NAME" value="" />
-      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
-      <option name="PREFERRED_AVD" value="" />
-      <option name="USE_COMMAND_LINE" value="true" />
-      <option name="COMMAND_LINE" value="" />
-      <option name="WIPE_USER_DATA" value="false" />
-      <option name="DISABLE_BOOT_ANIMATION" value="false" />
-      <option name="NETWORK_SPEED" value="full" />
-      <option name="NETWORK_LATENCY" value="none" />
-      <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
-      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
-      <method />
-    </configuration>
-    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
-      <module name="" />
-      <option name="TESTING_TYPE" value="0" />
-      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
-      <option name="PREFERRED_AVD" value="" />
-      <option name="USE_COMMAND_LINE" value="true" />
-      <option name="COMMAND_LINE" value="" />
-      <option name="WIPE_USER_DATA" value="false" />
-      <option name="DISABLE_BOOT_ANIMATION" value="false" />
-      <option name="NETWORK_SPEED" value="full" />
-      <option name="NETWORK_LATENCY" value="none" />
-      <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
-      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
-      <method />
-    </configuration>
-    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="myFilePath" />
-      <option name="GLUE" />
-      <option name="myNameFilter" />
-      <option name="myGeneratedName" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="FlashRunConfigurationType" factoryName="Flash App">
-      <option name="BCName" value="" />
-      <option name="IOSSimulatorSdkPath" value="" />
-      <option name="adlOptions" value="" />
-      <option name="airProgramParameters" value="" />
-      <option name="appDescriptorForEmulator" value="Android" />
-      <option name="debugTransport" value="USB" />
-      <option name="debuggerSdkRaw" value="BC SDK" />
-      <option name="emulator" value="NexusOne" />
-      <option name="emulatorAdlOptions" value="" />
-      <option name="fastPackaging" value="true" />
-      <option name="fullScreenHeight" value="0" />
-      <option name="fullScreenWidth" value="0" />
-      <option name="launchUrl" value="false" />
-      <option name="launcherParameters">
-        <LauncherParameters>
-          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
-          <option name="launcherType" value="OSDefault" />
-          <option name="newPlayerInstance" value="false" />
-          <option name="playerPath" value="/usr/bin/flashplayerdebugger" />
-        </LauncherParameters>
-      </option>
-      <option name="mobileRunTarget" value="Emulator" />
-      <option name="moduleName" value="" />
-      <option name="overriddenMainClass" value="" />
-      <option name="overriddenOutputFileName" value="" />
-      <option name="overrideMainClass" value="false" />
-      <option name="runTrusted" value="true" />
-      <option name="screenDpi" value="0" />
-      <option name="screenHeight" value="0" />
-      <option name="screenWidth" value="0" />
-      <option name="url" value="http://" />
-      <option name="usbDebugPort" value="7936" />
-      <method />
-    </configuration>
-    <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" appDescriptorForEmulator="Android" class_name="" emulatorAdlOptions="" method_name="" package_name="" scope="Class">
-      <option name="BCName" value="" />
-      <option name="launcherParameters">
-        <LauncherParameters>
-          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
-          <option name="launcherType" value="OSDefault" />
-          <option name="newPlayerInstance" value="false" />
-          <option name="playerPath" value="/usr/bin/flashplayerdebugger" />
-        </LauncherParameters>
-      </option>
-      <option name="moduleName" value="" />
-      <option name="trusted" value="true" />
-      <method />
-    </configuration>
-    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
-      <module name="" />
-      <setting name="vmparams" value="" />
-      <setting name="cmdLine" value="run-app" />
-      <setting name="depsClasspath" value="false" />
-      <setting name="passParentEnv" value="true" />
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <setting name="launchBrowser" value="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
-      <method />
-    </configuration>
-    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
-      <method />
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Main " />
-      <item itemvalue="Application.Main" />
-      <item itemvalue="Application.RecipeeReader" />
-      <item itemvalue="Application.MachineLearningGUI" />
-      <item itemvalue="Application.Main (1)" />
+      <item itemvalue="Gradle.ExtracteurIngrédients [idea]" />
+      <item itemvalue="Gradle.ExtracteurIngrédients [bootRun]" />
+      <item itemvalue="Gradle.ExtracteurIngrédients [bootJar]" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main (1)" />
-        <item itemvalue="Application.MachineLearningGUI" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Main " />
-        <item itemvalue="Application.RecipeeReader" />
+        <item itemvalue="Gradle.ExtracteurIngrédients [bootJar]" />
+        <item itemvalue="Gradle.ExtracteurIngrédients [bootRun]" />
+        <item itemvalue="Gradle.ExtracteurIngrédients [idea]" />
       </list>
     </recent_temporary>
   </component>
@@ -536,664 +969,256 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="54c89381-7bbd-4ac9-912e-6823bfa69154" name="Default" comment="" />
-      <created>1518891922139</created>
+      <changelist id="78edda4e-9f3c-4de3-bb93-7a1387467839" name="Default" comment="" />
+      <created>1534453871045</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1518891922139</updated>
-      <workItem from="1520536521105" duration="251000" />
+      <updated>1534453871045</updated>
     </task>
-    <task id="LOCAL-00001" summary="bug fix">
-      <created>1520538807778</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1520538807778</updated>
-    </task>
-    <task id="LOCAL-00002" summary="bug fix">
-      <created>1520538863528</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1520538863528</updated>
-    </task>
-    <task id="LOCAL-00003" summary="bug fix">
-      <created>1520538989888</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1520538989888</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Add all items in database">
-      <created>1520869419268</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1520869419268</updated>
-    </task>
-    <task id="LOCAL-00005" summary="add Metro crawler">
-      <created>1521416525789</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1521416525790</updated>
-    </task>
-    <task id="LOCAL-00006" summary="add Metro crawler">
-      <created>1521416577442</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1521416577442</updated>
-    </task>
-    <task id="LOCAL-00007" summary="add Metro crawler">
-      <created>1524580777899</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1524580777899</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Add machine learning module for components and recipe classification">
-      <created>1524675180185</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1524675180185</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Machine Learning classification works well">
-      <created>1526414465103</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1526414465103</updated>
-    </task>
-    <task id="LOCAL-00010" summary="IGA's componnent classification + refactoring ingredient reader to use it with Ingredient class">
-      <created>1531512609315</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1531512609316</updated>
-    </task>
-    <task id="LOCAL-00011" summary="Starting the merging of components and recipe in order to link them for optimisation">
-      <created>1531759370009</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1531759370009</updated>
-    </task>
-    <task id="LOCAL-00012" summary="Add all elements in bDD">
-      <created>1531940482437</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1531940482438</updated>
-    </task>
-    <task id="LOCAL-00013" summary="get all element from bdd starting format for optimization">
-      <created>1533926999060</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1533926999060</updated>
-    </task>
-    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="251000" />
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1920" y="0" width="1920" height="1080" extended-state="6" />
-    <editor active="true" />
+    <frame x="1920" y="0" width="1920" height="1054" extended-state="6" />
     <layout>
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="8" sideWeight="0.49947917" weight="0.3364979" />
-      <window_info anchor="right" id="Palette&#9;" order="9" />
-      <window_info id="Image Layers" order="5" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.30885416" side_tool="true" weight="0.22573839" />
-      <window_info anchor="right" id="Maven Projects" order="5" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.69114584" visible="true" weight="0.25154004" />
-      <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info anchor="bottom" id="Terminal" order="12" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2529349" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
       <window_info id="Capture Tool" order="4" />
-      <window_info id="Designer" order="1" />
-      <window_info active="true" content_ui="combo" id="Project" order="6" visible="true" weight="0.1421875" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3295688" />
-      <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" order="2" />
-      <window_info anchor="right" id="Theme Preview" order="8" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39873418" />
-      <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="bottom" id="Changes" order="7" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="right" id="Database" order="7" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3297414" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3297414" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3297414" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3297414" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Build" order="10" weight="0.3286638" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="IDEtalk Messages" order="9" />
-      <window_info anchor="bottom" id="Application Servers" order="11" />
-      <window_info anchor="right" id="IDEtalk" order="6" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Gradle" order="5" visible="true" weight="0.32977587" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Maven Projects" order="8" />
     </layout>
-    <layout-to-restore>
-      <window_info anchor="bottom" id="Application Servers" order="11" />
-      <window_info id="Designer" order="1" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info id="Image Layers" order="5" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.69114584" visible="true" weight="0.25154004" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" order="2" />
-      <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="Changes" order="7" />
-      <window_info id="Capture Tool" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.30885416" side_tool="true" weight="0.22573839" />
-      <window_info anchor="bottom" id="IDEtalk Messages" order="9" />
-      <window_info anchor="bottom" id="Messages" order="8" sideWeight="0.49947917" weight="0.3364979" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info anchor="right" id="Maven Projects" order="5" />
-      <window_info anchor="bottom" id="Terminal" order="12" />
-      <window_info content_ui="combo" id="Project" order="6" visible="true" weight="0.1421875" />
-      <window_info anchor="right" id="IDEtalk" order="6" />
-      <window_info anchor="right" id="Database" order="7" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="9" />
-      <window_info anchor="right" id="Theme Preview" order="8" />
-      <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3295688" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39873418" />
-    </layout-to-restore>
-  </component>
-  <component name="Vcs.Log.UiProperties">
-    <option name="RECENTLY_FILTERED_USER_GROUPS">
-      <collection />
-    </option>
-    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-      <collection />
-    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
-  <component name="VcsManagerConfiguration">
-    <ignored-roots>
-      <path value="$PROJECT_DIR$/Trie/trie" />
-    </ignored-roots>
-    <MESSAGE value="bug fix" />
-    <MESSAGE value="Add all items in database" />
-    <MESSAGE value="add Metro crawler" />
-    <MESSAGE value="Add machine learning module for components and recipe classification" />
-    <MESSAGE value="Machine Learning windows displays classifications infos." />
-    <MESSAGE value="Machine Learning classification works well" />
-    <MESSAGE value="Classification des ingrédients en provenance d'iga" />
-    <MESSAGE value="IGA's componnent classification + refactoring ingredient reader to use it with Ingredient class" />
-    <MESSAGE value="Starting the merging of components and recipe in order to link them for optimisation" />
-    <MESSAGE value="Add all elements in bDD" />
-    <MESSAGE value="get all element from bdd starting format for optimization" />
-    <option name="LAST_COMMIT_MESSAGE" value="get all element from bdd starting format for optimization" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <option name="time" value="7" />
-    </breakpoint-manager>
-  </component>
-  <component name="antWorkspaceConfiguration">
-    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
-    <option name="FILTER_TARGETS" value="false" />
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/ExtracteurIngredients/DistanceNode.java">
+    <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+        <state relative-caret-position="399">
+          <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ExtracteurIngredients/TrieNode.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/math/Trie.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="1" selection-start-column="1" selection-end-column="1" />
+        <state relative-caret-position="-378">
+          <caret line="73" column="57" lean-forward="true" selection-start-line="73" selection-start-column="57" selection-end-line="73" selection-end-column="57" />
+          <folding>
+            <element signature="e#1448#1462#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ExtracteurIngredients/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="5" column="37" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ExtracteurIngredients/IngredientCrawler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ExtracteurIngredients/Trie.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ExtracteurIngredients/IGACrawler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="14" column="47" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ExtracteurIngredients/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="5" column="37" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ExtracteurIngredients/IGACrawler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="23" column="80" selection-start-line="23" selection-start-column="80" selection-end-line="23" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ExtracteurIngredients/IngredientCrawler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ExtracteurIngredients/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="5" column="37" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ExtracteurIngredients/IGACrawler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="23" column="80" selection-start-line="23" selection-start-column="80" selection-end-line="23" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ExtracteurIngredients/IngredientCrawler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ExtracteurIngredients/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="5" column="37" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ExtracteurIngredients/IngredientCrawler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ExtracteurIngredients/IGACrawler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="28" column="65" selection-start-line="28" selection-start-column="65" selection-end-line="28" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ExtracteurIngredients/SQLiteJDBC.java" />
-    <entry file="file://$PROJECT_DIR$/src/ExtracteurIngredients/DistanceNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/idea.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GUI/MachineLearningWindow.java" />
-    <entry file="file://$PROJECT_DIR$/src/ExtracteurIngredients/Trie.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1092">
-          <caret line="56" selection-start-line="56" selection-end-line="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ExtracteurIngredients/TrieNode.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/math/TrieNode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ExtracteurIngredients/Distance.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/math/Math.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MachineLearning/Meat.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MachineLearning/Modifiers.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="6" selection-start-column="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MachineLearning/Vegetables.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5187">
-          <caret line="247" selection-start-line="247" selection-end-line="247" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MachineLearning/Forbiden.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="11" selection-start-column="11" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GUI/MachineLearningGUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="588">
-          <caret line="47" selection-start-line="47" selection-end-line="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ExtracteurIngredients/MetroCrawler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1617">
-          <caret line="82" column="18" selection-start-line="82" selection-start-column="18" selection-end-line="82" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/RecipeExtractor/RicardoCrawler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1386">
-          <caret line="74" column="39" selection-start-line="74" selection-start-column="39" selection-end-line="74" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-9-jdk/lib/src.zip!/java.base/java/util/Locale.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="875" selection-start-line="875" selection-end-line="875" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/sqlite-jdbc-3.21.0.jar!/org/sqlite/JDBC.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="51" selection-start-line="51" selection-end-line="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-9-jdk/lib/src.zip!/java.base/java/lang/Class.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="290" selection-start-line="290" selection-end-line="290" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-9-jdk/lib/src.zip!/java.base/java/lang/String.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="2531" selection-start-line="2531" selection-end-line="2531" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.db">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/RecipeExtractor/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" column="36" lean-forward="true" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MachineLearning/IngredientReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1071">
-          <caret line="58" column="30" selection-start-line="58" selection-start-column="30" selection-end-line="58" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MachineLearning/Classificator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="54" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ExtracteurIngredients/IngredientCrawler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="23" selection-start-line="22" selection-start-column="8" selection-end-line="23" />
-          <folding>
-            <element signature="e#349#350#0" expanded="true" />
-            <element signature="e#392#393#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ExtracteurIngredients/IGACrawler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="857">
-          <caret line="74" column="22" selection-start-line="74" selection-start-column="22" selection-end-line="74" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ExtracteurIngredients/Ingredient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="38" column="5" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-9-jdk/lib/src.zip!/java.base/java/util/function/Function.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="48" column="6" selection-start-line="48" selection-start-column="6" selection-end-line="48" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ExtracteurIngredients/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/RecipeExtractor/Recipe.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="13" column="27" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
-          <folding>
-            <element signature="e#201#202#0" expanded="true" />
-            <element signature="e#235#236#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Optimisation/Recipe.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/math/DistanceNode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-          <folding>
-            <element signature="e#127#128#0" expanded="true" />
-            <element signature="e#152#153#0" expanded="true" />
-          </folding>
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/data/Recipe.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/data/Composition.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/data/IngredientParameter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Optimisation/Main.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/RecipeExtractor/Main.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/crawler/RicardoCrawler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+        <state relative-caret-position="-84">
+          <caret line="18" column="16" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#372#380#0" expanded="true" />
+            <element signature="e#455#463#0" expanded="true" />
+            <element signature="e#2859#2867#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/data/RecipeParameter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="26" column="19" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#386#387#0" expanded="true" />
+            <element signature="e#411#412#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/database/DAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="199" selection-start-line="199" selection-end-line="199" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Optimisation/DAO.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/database/ParameterSetter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="212" column="63" selection-start-line="212" selection-start-column="63" selection-end-line="212" selection-end-column="63" />
+        <state relative-caret-position="1113">
+          <caret line="55" column="32" selection-start-line="55" selection-start-column="32" selection-end-line="55" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Optimisation/Composition.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
-          <folding>
-            <element signature="e#316#317#0" expanded="true" />
-            <element signature="e#353#354#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Optimisation/Ingredient.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/machinelearning/Classificator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
-          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
-          <folding>
-            <element signature="e#135#136#0" expanded="true" />
-            <element signature="e#160#161#0" expanded="true" />
-            <element signature="e#140#141#0" expanded="true" />
-            <element signature="e#167#168#0" expanded="true" />
-            <element signature="e#198#199#0" expanded="true" />
-            <element signature="e#226#227#0" expanded="true" />
-          </folding>
+          <caret line="6" column="41" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="41" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Optimisation/ParameterSetter.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/crawler/IngredientCrawler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="562">
-          <caret line="66" column="45" selection-start-line="66" selection-start-column="45" selection-end-line="66" selection-end-column="45" />
+        <state relative-caret-position="210">
+          <caret line="10" column="20" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Optimisation/Repas.cdat">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/machinelearning/IngredientReader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="290" column="76" lean-forward="true" selection-end-line="304" />
+        <state relative-caret-position="82">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Optimisation/ParametersSample">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/Application.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+        <state relative-caret-position="147">
+          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/crawler/MetroCrawler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="13" column="30" lean-forward="true" selection-start-line="13" selection-start-column="30" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/data/Recipe.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/crawler/IGACrawler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="88" column="18" selection-start-line="88" selection-start-column="18" selection-end-line="88" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/http/HelloWorldController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#342#343#0" expanded="true" />
+            <element signature="e#378#379#0" expanded="true" />
+            <element signature="e#482#483#0" expanded="true" />
+            <element signature="e#520#521#0" expanded="true" />
+            <element signature="e#719#720#0" expanded="true" />
+            <element signature="e#799#800#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/data/Ingredient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="654">
+          <caret line="44" column="5" lean-forward="true" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
   </component>
+  <component name="gradleExecuteTaskHistory">
+    <option value="$PROJECT_DIR$" />
+    <option value="bootRun" />
+    <option value="idea" />
+  </component>
   <component name="masterDetails">
     <states>
-      <state key="ArtifactsStructureConfigurable.UI">
+      <state key="ProjectJDKs.UI">
         <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>No facets are configured</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>scala-sdk-2.10.6</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>ExtracteurIngrédients</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>sqlite-jdbc-3.21.0</last-edited>
+          <last-edited>9.0</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
