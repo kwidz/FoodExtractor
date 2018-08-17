@@ -21,7 +21,7 @@ public class DAO {
     private final Connection connection;
     //instanciate DAO object
     public DAO(final Connection connection){
-        classificator = new IngredientReader("/home/kwidz/Cours/Memoire Maitrise/ExtracteurIngrédients/src/MachineLearning/Meat.txt","/home/kwidz/Cours/Memoire Maitrise/ExtracteurIngrédients/src/MachineLearning/Modifiers.txt", "/home/kwidz/Cours/Memoire Maitrise/ExtracteurIngrédients/src/MachineLearning/Vegetables.txt", "/home/kwidz/Cours/Memoire Maitrise/ExtracteurIngrédients/src/MachineLearning/Forbiden.txt");
+        classificator = new IngredientReader("/home/Extractor/Meat.txt","/home/Extractor/Modifiers.txt", "/home/Extractor/Vegetables.txt", "/home/Extractor/Forbiden.txt");
         this.connection=connection;
 
     }
@@ -39,7 +39,13 @@ public class DAO {
             System.out.println("Opened database successfully");
 
             stmt = connection.createStatement();
-            String sql = "CREATE TABLE COMPONENTS " +
+            String safedelete="DROP TABLE IF EXISTS Composition;" +
+                    "DROP TABLE IF EXISTS COMPONENTS;" +
+                    "DROP TABLE IF EXISTS Recipe;";
+            stmt.executeUpdate(safedelete);
+
+            String sql = "" +
+                    "CREATE TABLE COMPONENTS " +
                     "(ID INTEGER PRIMARY KEY AUTOINCREMENT," +
                     " BRAND           TEXT    NOT NULL, " +
                     " NAME            TEXT     NOT NULL, " +
@@ -47,12 +53,14 @@ public class DAO {
                     " PRICE         REAL);";
 
             stmt.executeUpdate(sql);
-            sql = "CREATE TABLE Recipe(" +
+            sql = "" +
+                    "CREATE TABLE Recipe(" +
                     "        ID     INTEGER PRIMARY KEY AUTOINCREMENT," +
                     "        NAME Text NOT NULL)" +
                     ";";
 
-            String sql2 =   "CREATE TABLE Composition(" +
+            String sql2 =   "" +
+                    "CREATE TABLE Composition(" +
                     "        id             INTEGER PRIMARY KEY AUTOINCREMENT," +
                     "        IngredientType Text NOT NULL ," +
                     "        Quantity       Text NOT NULL ," +

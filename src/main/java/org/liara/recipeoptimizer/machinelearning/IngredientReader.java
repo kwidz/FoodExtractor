@@ -6,10 +6,13 @@ The purpose of this program is to help the web crawler to find the good type of 
 import org.checkerframework.checker.nullness.qual.NonNull;
 import org.liara.recipeoptimizer.data.Ingredient;
 
+import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -26,18 +29,18 @@ public class IngredientReader {
     private List<String> forbidenTypes;
 
 
-    public IngredientReader(String meatFishCheese, String modifiers, String vegetables, String forbiden){
+    public IngredientReader(String meatFishCheese, String modifiers, String vegetables, String forbidden){
         this.meatFishCheeseList=makeList(meatFishCheese);
         this.modifiers=makeList(modifiers);
         this.vegetables=makeList(vegetables);
-        this.forbidenTypes=makeList(forbiden);
+        this.forbidenTypes=makeList(forbidden);
     }
 
-    public void refreshTypes(String meatFishCheese, String modifiers, String vegetables, String forbiden){
+    public void refreshTypes(String meatFishCheese, String modifiers, String vegetables, String forbidden){
         this.meatFishCheeseList=makeList(meatFishCheese);
         this.modifiers=makeList(modifiers);
         this.vegetables=makeList(vegetables);
-        this.forbidenTypes=makeList(forbiden);
+        this.forbidenTypes=makeList(forbidden);
     }
 
     private List<String> makeList(String fileName){
@@ -101,7 +104,7 @@ public class IngredientReader {
     }
 
     public static void main(String[] args){
-        IngredientReader r = new IngredientReader("/home/kwidz/Cours/Memoire Maitrise/ExtracteurIngrédients/src/MachineLearning/Meat.txt","/home/kwidz/Cours/Memoire Maitrise/ExtracteurIngrédients/src/MachineLearning/Modifiers.txt", "/home/kwidz/Cours/Memoire Maitrise/ExtracteurIngrédients/src/MachineLearning/Vegetables.txt", "/home/kwidz/Cours/Memoire Maitrise/ExtracteurIngrédients/src/MachineLearning/Forbiden.txt");
+        IngredientReader r = new IngredientReader("Meat.txt","Modifiers.txt", "Vegetables.txt", "resources/Forbiden.txt");
     }
 
 }

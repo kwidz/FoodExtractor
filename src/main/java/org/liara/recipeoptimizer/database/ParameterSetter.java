@@ -2,10 +2,10 @@ package org.liara.recipeoptimizer.database;
 
 import org.liara.recipeoptimizer.data.Composition;
 import org.liara.recipeoptimizer.data.IngredientParameter;
-import org.liara.recipeoptimizer.data.Recipe;
 import org.liara.recipeoptimizer.data.RecipeParameter;
 
 import java.io.IOException;
+import java.net.URISyntaxException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -24,7 +24,7 @@ public class ParameterSetter {
         this.dao = dao;
     }
 
-    public void ParameterFile(){
+    public void parameterFile(){
 
         ArrayList<IngredientParameter> components = dao.selectAllING();
         ArrayList<RecipeParameter> recipes = dao.selectAllREC();
@@ -73,9 +73,10 @@ public class ParameterSetter {
             }
             CONT = CONT.concat("\n");
         }
-        Path copied = Paths.get("/home/kwidz/Cours/Memoire Maitrise/ExtracteurIngrédients/src/Optimisation/Repas.cdat");
-        Path originalPath = Paths.get("/home/kwidz/Cours/Memoire Maitrise/ExtracteurIngrédients/src/Optimisation/ParametersSample");
+        Path copied = null;
         try {
+            copied = Paths.get("/home/Extractor/Repas.cdat");
+            Path originalPath = Paths.get("/home/Extractor/ParametersSample");
             Files.copy(originalPath, copied, StandardCopyOption.REPLACE_EXISTING);
         } catch (IOException e) {
             e.printStackTrace();
@@ -93,11 +94,9 @@ public class ParameterSetter {
     }
     private void writeParameterInfile(final String toFind, final String toWrite){
         try {
-            Path path = Paths.get("/home/kwidz/Cours/Memoire Maitrise/ExtracteurIngrédients/src/Optimisation/Repas.cdat");
-
-            Stream<String> lines = Files.lines(path);
+            Stream<String> lines = Files.lines(Paths.get("/home/Extractor/Repas.cdat"));
             List<String> replaced = lines.map(line -> line.replaceAll(toFind, toWrite)).collect(Collectors.toList());
-            Files.write(path, replaced);
+            Files.write(Paths.get("/home/Extractor/Repas.cdat"), replaced);
             lines.close();
 
         } catch (IOException e) {
