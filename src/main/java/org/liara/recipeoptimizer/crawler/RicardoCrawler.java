@@ -75,7 +75,7 @@ public class RicardoCrawler {
                     allIngredients.add(e.text());
                     composition.add(e.text());
                 }
-                Recipe r = new Recipe(name,composition);
+                Recipe r = new Recipe(name,composition,absHref);
                 allRecipes.add(r);
             }
         }

@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 public class Recipe {
     ArrayList<String> composition;
+    private String url;
 
     public ArrayList<String> getComposition() {
         return composition;
@@ -13,11 +14,17 @@ public class Recipe {
         return name;
     }
 
+
     String name;
 
-    public Recipe(String name, ArrayList<String> composition){
+    public String getUrl() {
+        return url;
+    }
+
+    public Recipe(String name, ArrayList<String> composition, String url){
         this.name=name;
         this.composition = composition;
+        this.url = url;
     }
     public String toString(){
         return name+" : \n"+composition+"\n";

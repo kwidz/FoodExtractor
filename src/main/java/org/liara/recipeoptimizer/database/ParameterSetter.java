@@ -2,6 +2,7 @@ package org.liara.recipeoptimizer.database;
 
 import org.liara.recipeoptimizer.data.Composition;
 import org.liara.recipeoptimizer.data.IngredientParameter;
+import org.liara.recipeoptimizer.data.Parameters;
 import org.liara.recipeoptimizer.data.RecipeParameter;
 
 import java.io.IOException;
@@ -24,7 +25,7 @@ public class ParameterSetter {
         this.dao = dao;
     }
 
-    public void parameterFile(){
+    public Parameters parameterFile(){
 
         ArrayList<IngredientParameter> components = dao.selectAllING();
         ArrayList<RecipeParameter> recipes = dao.selectAllREC();
@@ -75,8 +76,8 @@ public class ParameterSetter {
         }
         Path copied = null;
         try {
-            copied = Paths.get("/home/Extractor/Repas.cdat");
-            Path originalPath = Paths.get("/home/Extractor/ParametersSample");
+            copied = Paths.get("/home/kwidz/Cours/Memoire Maitrise/ExtracteurIngredients/src/main/resources/Repas.cdat");
+            Path originalPath = Paths.get("/home/kwidz/Cours/Memoire Maitrise/ExtracteurIngredients/src/main/resources/ParametersSample");
             Files.copy(originalPath, copied, StandardCopyOption.REPLACE_EXISTING);
         } catch (IOException e) {
             e.printStackTrace();
@@ -87,16 +88,16 @@ public class ParameterSetter {
         writeParameterInfile("<ING>",ING);
         writeParameterInfile("<costs>",costs);
         writeParameterInfile("<CONT>",CONT);
-
+        return new Parameters(REC,ING,costs,CONT);
 
 
 
     }
     private void writeParameterInfile(final String toFind, final String toWrite){
         try {
-            Stream<String> lines = Files.lines(Paths.get("/home/Extractor/Repas.cdat"));
+            Stream<String> lines = Files.lines(Paths.get("/home/kwidz/Cours/Memoire Maitrise/ExtracteurIngredients/src/main/resources/Repas.cdat"));
             List<String> replaced = lines.map(line -> line.replaceAll(toFind, toWrite)).collect(Collectors.toList());
-            Files.write(Paths.get("/home/Extractor/Repas.cdat"), replaced);
+            Files.write(Paths.get("/home/kwidz/Cours/Memoire Maitrise/ExtracteurIngredients/src/main/resources/Repas.cdat"), replaced);
             lines.close();
 
         } catch (IOException e) {
