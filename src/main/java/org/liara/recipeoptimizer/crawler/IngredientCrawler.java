@@ -18,7 +18,7 @@ public abstract class IngredientCrawler {
 
 
     public IngredientCrawler(){
-        classificator = new IngredientReader("/home/Extractor/Meat.txt","/home/Extractor/Modifiers.txt", "/home/Extractor/Vegetables.txt", "/home/Extractor/Forbiden.txt");
+        classificator = new IngredientReader("Meat.txt","Modifiers.txt", "Vegetables.txt", "Forbiden.txt");
         allGroceryComponents = new ArrayList<>();
     }
 

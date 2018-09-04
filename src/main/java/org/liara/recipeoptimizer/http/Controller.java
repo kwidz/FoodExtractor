@@ -2,6 +2,7 @@ package org.liara.recipeoptimizer.http;
 
 import jCMPL.Cmpl;
 import jCMPL.CmplException;
+import jCMPL.CmplSolElement;
 import org.checkerframework.checker.nullness.qual.NonNull;
 import org.liara.recipeoptimizer.crawler.IGACrawler;
 import org.liara.recipeoptimizer.crawler.RicardoCrawler;
@@ -14,8 +15,12 @@ import org.springframework.web.bind.annotation.*;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+import java.sql.SQLOutput;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 @RestController
 public class Controller {
@@ -23,7 +28,7 @@ public class Controller {
     public @NonNull String crawlIGA () {
         final @NonNull Connection connection;
         try {
-            connection = DriverManager.getConnection("jdbc:sqlite:/home/Extractor/test.db");
+            connection = DriverManager.getConnection("jdbc:sqlite:test.db");
             final DAO dao = new DAO(connection);
             dao.createDB();
             RicardoCrawler recipecrawler= new RicardoCrawler();
@@ -46,7 +51,7 @@ public class Controller {
     public @NonNull String makeConfig() {
         final @NonNull Connection connection;
         try {
-            connection = DriverManager.getConnection("jdbc:sqlite:/home/Extractor/test.db");
+            connection = DriverManager.getConnection("jdbc:sqlite:test.db");
             final DAO dao = new DAO(connection);
             final ParameterSetter p = new ParameterSetter(dao);
             p.parameterFile();
@@ -60,10 +65,15 @@ public class Controller {
 
 
     @GetMapping("/optimize")
-    public @NonNull String optimize(){
+    public @NonNull Map<String, Object> optimize(){
 
         makeConfig();
         try {
+            final @NonNull Connection connection;
+            final DAO dao;
+            connection = DriverManager.getConnection("jdbc:sqlite:test.db");
+            dao = new DAO(connection);
+
             Cmpl m = new Cmpl("Recipe.cmpl");
             m.connect("http://127.0.0.1:4000");
             m.debug(true);
@@ -73,15 +83,13 @@ public class Controller {
 
                 //standard report
                 m.solutionReport();
-
-                //example to obtain the solution manually
-                System.out.println("Objective name      :" + m.objectiveName());
-                System.out.println("Nr. of Variables    :" + m.nrOfVariables());
-                System.out.println("Nr. of Constraints  :" + m.nrOfConstraints());
-                System.out.println("Nr. of Solutions    :" + m.nrOfSolutions());
-                System.out.println("Display variables   :" + m.varDisplayOptions());
-                System.out.println("Display constraints :" + m.varDisplayOptions());
-
+                ArrayList<String> selectedRecipes = new ArrayList<>();
+                for (CmplSolElement s:m.solution().variables()) {
+                    if(s.activity().toString().equals("1")){
+                        selectedRecipes.add(s.name());
+                    }
+                }
+                //price
                 System.out.println("Objective value     :" + m.solution().value() + " " + m.objectiveSense());
 
 
@@ -91,17 +99,49 @@ public class Controller {
                 m.saveSolutionAscii();
                 m.saveSolutionCsv();
 
+                //return String.valueOf(m.solution().value());
+                Map<String, Object> recipesIGA = new HashMap<>();
+                Map<String, Object> recipesMetro = new HashMap<>();
+                Pattern pattern = Pattern.compile("([\\+-]?\\d+)([eE][\\+-]?\\d+)?");
+                System.out.println(selectedRecipes.get(0).replace("X[","").replace("]",""));
+                recipesIGA.put("monday",dao.getRecipeById(Integer.parseInt(selectedRecipes.get(0).replace("X[","").replace("]",""))));
+                recipesIGA.put("tuesday",dao.getRecipeById(Integer.parseInt(selectedRecipes.get(1).replace("X[","").replace("]",""))));
+                recipesIGA.put("wednesday",dao.getRecipeById(Integer.parseInt(selectedRecipes.get(2).replace("X[","").replace("]",""))));
+                recipesIGA.put("thursday",dao.getRecipeById(Integer.parseInt(selectedRecipes.get(3).replace("X[","").replace("]",""))));
+                recipesIGA.put("friday",dao.getRecipeById(Integer.parseInt(selectedRecipes.get(4).replace("X[","").replace("]",""))));
+
+
+                recipesMetro.put("monday",new Recipe("boeuf épicé au légumes frais",null, "https://kwidz.fr"));
+                recipesMetro.put("tuesday",new Recipe("nouilles de lanzhou",null, "https://kwidz.fr"));
+                recipesMetro.put("wednesday",new Recipe("poutine",null, "https://kwidz.fr"));
+                recipesMetro.put("thursday",new Recipe("fish and chips",null, "https://kwidz.fr"));
+                recipesMetro.put("friday",new Recipe("salade au porc éffiloché ",null, "https://kwidz.fr"));
+
+                double prixIGA=m.solution().value();
+                double prixMetro=56.62f;
+
+
+                Map<String, Object> week = new HashMap<>();
+                week.put("weekIGA", recipesIGA);
+                week.put("weekMetro", recipesMetro);
+                week.put("prixIGA", prixIGA);
+                week.put("prixMetro", prixMetro);
+                return week;
+
             } else {
                 System.out.println("Solver failed " + m.solver() + " " + m.solverMessage());
             }
 
 
-            return String.valueOf(m.solution().value());
+
+
         } catch (CmplException e) {
+            e.printStackTrace();
+        } catch (SQLException e) {
             e.printStackTrace();
         }
 
-        return "fuck !";
+        return null;
     }
 
 

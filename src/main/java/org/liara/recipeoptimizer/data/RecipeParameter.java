@@ -8,13 +8,14 @@ public class RecipeParameter {
     private final int id;
 
     @NonNull
-    private final String name;
+    private final String name, url;
 
     @Override
     public String toString() {
         return "Recipes{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
+                ", url='"+url+'\''+
                 '}';
     }
 
@@ -22,9 +23,18 @@ public class RecipeParameter {
         return id;
     }
 
-    public RecipeParameter(@NonNegative final int id, @NonNull final String name) {
+    public RecipeParameter(@NonNegative final int id, @NonNull final String name, @NonNull final String url) {
 
         this.id = id;
+        this.url = url;
         this.name = name;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getUrl() {
+        return url;
     }
 }

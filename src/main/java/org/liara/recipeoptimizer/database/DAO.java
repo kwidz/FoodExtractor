@@ -1,5 +1,6 @@
 package org.liara.recipeoptimizer.database;
 
+import org.checkerframework.checker.nullness.qual.NonNull;
 import org.liara.recipeoptimizer.data.*;
 import org.liara.recipeoptimizer.machinelearning.IngredientReader;
 
@@ -56,7 +57,8 @@ public class DAO {
             sql = "" +
                     "CREATE TABLE Recipe(" +
                     "        ID     INTEGER PRIMARY KEY AUTOINCREMENT," +
-                    "        NAME Text NOT NULL)" +
+                    "        NAME Text NOT NULL," +
+                    "URL Text NOT NULL)" +
                     ";";
 
             String sql2 =   "" +
@@ -116,10 +118,11 @@ public class DAO {
             connection.setAutoCommit(false);
             //System.out.println("Opened database successfully");
 
-            PreparedStatement stmt = connection.prepareStatement("INSERT INTO RECIPE (NAME) VALUES (?);");
+            PreparedStatement stmt = connection.prepareStatement("INSERT INTO RECIPE (NAME,URL) VALUES (?,?);");
             String pattern = "\'";
             String name = r.getName().replaceAll(pattern," ");
             stmt.setString(1,name);
+            stmt.setString(2,r.getUrl());
             stmt.executeUpdate();
             ResultSet keys = stmt.getGeneratedKeys();
             keys.next();
@@ -175,7 +178,7 @@ public class DAO {
 
             // loop through the result set
             while (rs.next()) {
-                recipes.add(new RecipeParameter(rs.getInt("id"),rs.getString("name")));
+                recipes.add(new RecipeParameter(rs.getInt("id"),rs.getString("name"),rs.getString("url")));
 
             }
         } catch (SQLException e) {
@@ -222,6 +225,28 @@ public class DAO {
             throw new Error(e);
         }
         return compos;
+    }
+
+    public @NonNull RecipeParameter getRecipeById(int id){
+        String sql2 = "Select ID, NAME, URL from Recipe where ID = ?";
+        PreparedStatement pstmt = null;
+        ResultSet rs=null;
+        try {
+            pstmt = connection.prepareStatement(sql2, Statement.RETURN_GENERATED_KEYS);
+            pstmt.setInt(1,id);
+            rs = pstmt.executeQuery();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    RecipeParameter r=null;
+        try {
+            r = new RecipeParameter(rs.getInt("ID"),rs.getString("NAME"),rs.getString("URL"));
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return r;
+
+
     }
 
 

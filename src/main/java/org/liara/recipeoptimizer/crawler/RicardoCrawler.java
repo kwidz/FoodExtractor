@@ -16,7 +16,7 @@ public class RicardoCrawler {
     ArrayList<Recipe> allRecipes = new ArrayList<Recipe>();
     IngredientReader classificator;
     public RicardoCrawler() {
-        classificator = new IngredientReader("/home/Extractor/Meat.txt","/home/Extractor/Modifiers.txt", "/home/Extractor/Vegetables.txt", "/home/Extractor/Forbiden.txt");
+        classificator = new IngredientReader("Meat.txt","Modifiers.txt", "Vegetables.txt", "Forbiden.txt");
         crawl();
 
     }
