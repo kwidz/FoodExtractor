@@ -1,0 +1,18 @@
+%REC set <"BoeufTomates" "patescarbonar" "pommesde" >
+%ING set <"Boeuf" "Tomates" "pates" "creme" "bacon" "pommesdeterre" "oignon" "sel" "poivre">
+
+%costs[ING] <5.5 3 1.5 3 4 2 4 1 1>
+%costs2[ING] <4.5 2 0.5 2 3 1 3 1 1>
+%nutrChick[REC]<0 1 0>
+%nutrBoeuf[REC]<1 0 1>
+
+%CONT[ING,REC] < 1 0 0
+1 0 0
+0 1 0
+0 1 0
+0 1 0
+0 0 1
+0 0 1
+1 1 1
+1 1 1 >
+%nbRepas <2>

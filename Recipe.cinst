@@ -1,0 +1,44 @@
+<?xml version = "1.0" encoding="UTF-8" standalone="yes"?>
+<CmplInstance version="1.0">
+<general>
+<name>Recipe.cmpl</name>
+<jobId>S172.17.0.1-2018-08-29-14-54-28-657860</jobId>
+</general>
+<problemFiles>
+<file name="Recipe.cmpl" type="cmplMain">
+%data Recipe.cdat: REC set, ING set, costs[ING], nutrChick[REC], nutrBoeuf[REC], CONT[ING,REC], nbRepas
+variables:
+X[REC]: binary;
+objectives:
+cost: sum{i in ING, r in REC : CONT[i,r ] * costs[i] * X[r] } -&gt;min;
+constraints:
+sum{r in REC : X[r]}=nbRepas;
+boeuf:sum {r in REC : nutrBoeuf[r]*X[r]}&gt;=1;
+poulet:sum {r in REC: nutrChick[r]*X[r]}&gt;=1;
+
+
+
+</file>
+<file name="Recipe.cdat" type="cmplData">
+%REC set &lt;&quot;BoeufTomates&quot; &quot;patescarbonar&quot; &quot;pommesde&quot; &gt;
+%ING set &lt;&quot;Boeuf&quot; &quot;Tomates&quot; &quot;pates&quot; &quot;creme&quot; &quot;bacon&quot; &quot;pommesdeterre&quot; &quot;oignon&quot; &quot;sel&quot; &quot;poivre&quot;&gt;
+
+%costs[ING] &lt;5.5 3 1.5 3 4 2 4 1 1&gt;
+%costs2[ING] &lt;4.5 2 0.5 2 3 1 3 1 1&gt;
+%nutrChick[REC]&lt;0 1 0&gt;
+%nutrBoeuf[REC]&lt;1 0 1&gt;
+
+%CONT[ING,REC] &lt; 1 0 0
+1 0 0
+0 1 0
+0 1 0
+0 1 0
+0 0 1
+0 0 1
+1 1 1
+1 1 1 &gt;
+%nbRepas &lt;2&gt;
+
+</file>
+</problemFiles>
+</CmplInstance>

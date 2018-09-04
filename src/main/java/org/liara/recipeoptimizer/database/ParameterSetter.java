@@ -76,8 +76,8 @@ public class ParameterSetter {
         }
         Path copied = null;
         try {
-            copied = Paths.get("/home/kwidz/Cours/Memoire Maitrise/ExtracteurIngredients/src/main/resources/Repas.cdat");
-            Path originalPath = Paths.get("/home/kwidz/Cours/Memoire Maitrise/ExtracteurIngredients/src/main/resources/ParametersSample");
+            copied = Paths.get("Recipe.cdat");
+            Path originalPath = Paths.get("ParametersSample");
             Files.copy(originalPath, copied, StandardCopyOption.REPLACE_EXISTING);
         } catch (IOException e) {
             e.printStackTrace();
@@ -95,9 +95,9 @@ public class ParameterSetter {
     }
     private void writeParameterInfile(final String toFind, final String toWrite){
         try {
-            Stream<String> lines = Files.lines(Paths.get("/home/kwidz/Cours/Memoire Maitrise/ExtracteurIngredients/src/main/resources/Repas.cdat"));
+            Stream<String> lines = Files.lines(Paths.get("Recipe.cdat"));
             List<String> replaced = lines.map(line -> line.replaceAll(toFind, toWrite)).collect(Collectors.toList());
-            Files.write(Paths.get("/home/kwidz/Cours/Memoire Maitrise/ExtracteurIngredients/src/main/resources/Repas.cdat"), replaced);
+            Files.write(Paths.get("Recipe.cdat"), replaced);
             lines.close();
 
         } catch (IOException e) {

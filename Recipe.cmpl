@@ -1,0 +1,11 @@
+%data Recipe.cdat: REC set, ING set, costs[ING], nutrChick[REC], nutrBoeuf[REC], CONT[ING,REC], nbRepas
+variables:
+X[REC]: binary;
+objectives:
+cost: sum{i in ING, r in REC : CONT[i,r ] * costs[i] * X[r] } ->min;
+constraints:
+sum{r in REC : X[r]}=nbRepas;
+boeuf:sum {r in REC : nutrBoeuf[r]*X[r]}>=1;
+poulet:sum {r in REC: nutrChick[r]*X[r]}>=1;
+
+

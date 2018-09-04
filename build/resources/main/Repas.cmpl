@@ -1,0 +1,35 @@
+#parameters:
+
+#REC := set("BoeufTomates","patescarbonara","pommesdeterresoignons");
+#ING := set("Boeuf", "Tomates", "pates", "creme", "bacon", "pommesdeterre", "oignon", "sel", "poivre");
+
+#costs per components
+
+#costs[ING]:= (5.5,3,1.5,3,4,2,4,1,1);
+
+ #1 si l ingredient est contenu dans la recette
+%data /home/kwidz/Cours/Memoire Maitrise/ExtracteurIngredients/src/main/resources/Repas.cdat: REC set, EP set, ING set, costs[ING], costs2[ING], CONT[ING,REC], nbRepas
+
+#CONT[ING,REC]:= (
+#(1,0,0),
+#(1,0,0),
+#(0,1,0),
+#(0,1,0),
+#(0,1,0),
+#(0,0,1),
+#(0,0,1),
+#(1,1,1),
+#(1,1,1));
+
+#nbRepas:=2;
+
+
+variables:
+X[REC]: binary;
+
+objectives:
+cost: sum{i in ING, r in REC, e in EP : CONT[i,r ] * costs[i] * X[r] } ->min;
+constraints:
+sum{r in REC : X[r]}=nbRepas;
+
+

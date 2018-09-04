@@ -1,0 +1,7 @@
+%REC set <REC>
+%ING set <ING>
+
+%costs[ING] <costs>
+
+%CONT[ING,REC] <CONT>
+%nbRepas <5>
