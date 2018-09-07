@@ -1,9 +1,6 @@
 package org.liara.recipeoptimizer.database;
 
-import org.liara.recipeoptimizer.data.Composition;
-import org.liara.recipeoptimizer.data.IngredientParameter;
-import org.liara.recipeoptimizer.data.Parameters;
-import org.liara.recipeoptimizer.data.RecipeParameter;
+import org.liara.recipeoptimizer.data.*;
 
 import java.io.IOException;
 import java.net.URISyntaxException;
@@ -25,9 +22,9 @@ public class ParameterSetter {
         this.dao = dao;
     }
 
-    public Parameters parameterFile(){
+    public Parameters parameterFile(Epicerie epicerie){
 
-        ArrayList<IngredientParameter> components = dao.selectAllING();
+        ArrayList<IngredientParameter> components = dao.selectAllING(epicerie);
         ArrayList<RecipeParameter> recipes = dao.selectAllREC();
         ArrayList<Composition> compositions = dao.selectAllComposition();
         System.out.println(components);

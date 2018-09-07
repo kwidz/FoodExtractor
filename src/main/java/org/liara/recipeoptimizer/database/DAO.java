@@ -41,12 +41,22 @@ public class DAO {
 
             stmt = connection.createStatement();
             String safedelete="DROP TABLE IF EXISTS Composition;" +
-                    "DROP TABLE IF EXISTS COMPONENTS;" +
+                    "DROP TABLE IF EXISTS COMPONENTSIGA;" +
+                    "DROP TABLE IF EXISTS COMPONENTSMETRO;" +
                     "DROP TABLE IF EXISTS Recipe;";
             stmt.executeUpdate(safedelete);
 
             String sql = "" +
-                    "CREATE TABLE COMPONENTS " +
+                    "CREATE TABLE COMPONENTSIGA " +
+                    "(ID INTEGER PRIMARY KEY AUTOINCREMENT," +
+                    " BRAND           TEXT    NOT NULL, " +
+                    " NAME            TEXT     NOT NULL, " +
+                    " TYPE        CHAR(50), " +
+                    " PRICE         REAL);";
+
+            stmt.executeUpdate(sql);
+            sql = "" +
+                    "CREATE TABLE COMPONENTSMETRO " +
                     "(ID INTEGER PRIMARY KEY AUTOINCREMENT," +
                     " BRAND           TEXT    NOT NULL, " +
                     " NAME            TEXT     NOT NULL, " +
@@ -58,7 +68,8 @@ public class DAO {
                     "CREATE TABLE Recipe(" +
                     "        ID     INTEGER PRIMARY KEY AUTOINCREMENT," +
                     "        NAME Text NOT NULL," +
-                    "URL Text NOT NULL)" +
+                    "URL Text NOT NULL" +
+                    ")" +
                     ";";
 
             String sql2 =   "" +
@@ -67,7 +78,12 @@ public class DAO {
                     "        IngredientType Text NOT NULL ," +
                     "        Quantity       Text NOT NULL ," +
                     "        id_Recipe      Int NOT NULL" +
-                    ",FOREIGN KEY (id_Recipe) REFERENCES Recipe(id));";
+                    "," +
+                    "" +
+                    "FOREIGN KEY (id_Recipe) " +
+                    "REFERENCES Recipe(id)" +
+                    "ON DELETE CASCADE" +
+                    ");";
 
             stmt.executeUpdate(sql);
             stmt.executeUpdate(sql2);
@@ -80,8 +96,51 @@ public class DAO {
         System.out.println("Table created successfully");
     }
 
+    public void clearDB(){
+
+        Statement stmt = null;
+
+        try {
+
+
+            System.out.println("Opened database successfully");
+
+            stmt = connection.createStatement();
+            String safedelete="" +
+                    "DROP TABLE IF EXISTS COMPONENTSIGA;" +
+                    "DROP TABLE IF EXISTS COMPONENTSMETRO;" +
+                    "DROP TABLE IF EXISTS COMPONENTS;";
+            stmt.executeUpdate(safedelete);
+
+            String sql = "" +
+                    "CREATE TABLE COMPONENTSIGA " +
+                    "(ID INTEGER PRIMARY KEY AUTOINCREMENT," +
+                    " BRAND           TEXT    NOT NULL, " +
+                    " NAME            TEXT     NOT NULL, " +
+                    " TYPE        CHAR(50), " +
+                    " PRICE         REAL);";
+
+            stmt.executeUpdate(sql);
+            sql = "" +
+                    "CREATE TABLE COMPONENTSMETRO " +
+                    "(ID INTEGER PRIMARY KEY AUTOINCREMENT," +
+                    " BRAND           TEXT    NOT NULL, " +
+                    " NAME            TEXT     NOT NULL, " +
+                    " TYPE        CHAR(50), " +
+                    " PRICE         REAL);";
+
+            stmt.executeUpdate(sql);
+            stmt.close();
+
+        } catch ( Exception e ) {
+            System.err.println( e.getClass().getName() + ": " + e.getMessage() );
+            System.exit(0);
+        }
+        System.out.println("Table created successfully");
+    }
+
     //Inserting a Component
-    public void insertComponent(Ingredient component){
+    public void insertComponent(Ingredient component, Epicerie ep){
 
         try {
             connection.setAutoCommit(false);
@@ -91,12 +150,20 @@ public class DAO {
 
             String name = component.getName().replaceAll("\'"," ");
             String brand = component.getBrand().replaceAll("\'"," ");
-            stmt.executeUpdate(String.join(
-                "",
-                "INSERT INTO COMPONENTS (BRAND,NAME,TYPE,PRICE) ",
-                "VALUES ('", brand, "','", name, "', '", component.getType().replaceAll("\'"," "),
-                "', '", String.valueOf(component.getPrice()), "');"
-            ));
+            if(ep==Epicerie.IGA)
+                stmt.executeUpdate(String.join(
+                    "",
+                    "INSERT INTO COMPONENTSIGA (BRAND,NAME,TYPE,PRICE) ",
+                    "VALUES ('", brand, "','", name, "', '", component.getType().replaceAll("\'"," "),
+                    "', '", String.valueOf(component.getPrice()), "');"
+                ));
+            if(ep==Epicerie.METRO)
+                stmt.executeUpdate(String.join(
+                        "",
+                        "INSERT INTO COMPONENTSMETRO (BRAND,NAME,TYPE,PRICE) ",
+                        "VALUES ('", brand, "','", name, "', '", component.getType().replaceAll("\'"," "),
+                        "', '", String.valueOf(component.getPrice()), "');"
+                ));
 
 
             stmt.close();
@@ -149,12 +216,12 @@ public class DAO {
     }
 
     //Inserting some Components
-    public void insertComponents(ArrayList<Ingredient> components){
+    public void insertComponents(ArrayList<Ingredient> components, Epicerie e){
 
         for (Ingredient i: components
              ) {
 
-            insertComponent(i);
+            insertComponent(i,e);
 
         }
 
@@ -186,15 +253,20 @@ public class DAO {
         }
         return recipes;
     }
-    public ArrayList<IngredientParameter> selectAllING(){
+    public ArrayList<IngredientParameter> selectAllING(Epicerie ep){
 
         ArrayList<IngredientParameter> allING=new ArrayList<>();
         try {
              Statement stmt  = connection.createStatement();
-             ResultSet rs    = stmt.executeQuery("SELECT AVG(PRICE), TYPE\n" +
-                     "    FROM COMPONENTS\n" +
+             ResultSet rs;
+             if (ep==Epicerie.IGA)
+                     rs= stmt.executeQuery("SELECT AVG(PRICE), TYPE\n" +
+                     "    FROM COMPONENTSIGA\n" +
                      "GROUP BY TYPE;");
-
+             else
+                     rs= stmt.executeQuery("SELECT AVG(PRICE), TYPE\n" +
+                     "    FROM COMPONENTSMETRO\n" +
+                     "GROUP BY TYPE;");
             // loop through the result set
             int id=0;
             while (rs.next()) {
