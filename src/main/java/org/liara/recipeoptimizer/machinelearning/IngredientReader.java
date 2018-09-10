@@ -107,4 +107,19 @@ public class IngredientReader {
         IngredientReader r = new IngredientReader("Meat.txt","Modifiers.txt", "Vegetables.txt", "resources/Forbiden.txt");
     }
 
+    public List<String> getMeatFishCheeseList() {
+        return meatFishCheeseList;
+    }
+
+    public List<String> getModifiers() {
+        return modifiers;
+    }
+
+    public List<String> getVegetables() {
+        return vegetables;
+    }
+
+    public List<String> getForbidenTypes() {
+        return forbidenTypes;
+    }
 }

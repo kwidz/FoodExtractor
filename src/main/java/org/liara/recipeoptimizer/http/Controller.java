@@ -1,5 +1,6 @@
 package org.liara.recipeoptimizer.http;
 
+import com.sun.javafx.collections.MappingChange;
 import jCMPL.Cmpl;
 import jCMPL.CmplException;
 import jCMPL.CmplSolElement;
@@ -12,6 +13,7 @@ import org.liara.recipeoptimizer.data.Ingredient;
 import org.liara.recipeoptimizer.data.Recipe;
 import org.liara.recipeoptimizer.database.DAO;
 import org.liara.recipeoptimizer.database.ParameterSetter;
+import org.liara.recipeoptimizer.machinelearning.IngredientReader;
 import org.springframework.web.bind.annotation.*;
 
 import java.sql.Connection;
@@ -19,6 +21,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.regex.Pattern;
 
@@ -81,7 +84,7 @@ public class Controller {
             dao = new DAO(connection);
             makeConfig(Epicerie.IGA);
             Cmpl m = new Cmpl("Recipe.cmpl");
-            m.connect("http://127.0.0.1:4000");
+            m.connect("http://kwidz.fr:4000");
             m.debug(true);
             m.knock();
             m.solve();
@@ -119,7 +122,7 @@ public class Controller {
             }
             makeConfig(Epicerie.METRO);
             m = new Cmpl("Recipe.cmpl");
-            m.connect("http://127.0.0.1:4000");
+            m.connect("http://kwidz.fr:4000");
             m.debug(true);
             m.knock();
             m.solve();
@@ -191,6 +194,25 @@ public class Controller {
         week.put("prixIGA", prixIGA);
         week.put("prixMetro", prixMetro);
         return week;
+    }
+
+
+    @GetMapping("/getTypes")
+    public Map<String,Object> getTypes(){
+        IngredientReader i = new IngredientReader(
+                "Meat.txt",
+                "Modifiers.txt",
+                "Vegetables.txt",
+                "Forbiden.txt");
+        List<String> alltypes = i.getMeatFishCheeseList();
+        alltypes.addAll(i.getVegetables());
+        List<String> modifiers = i.getModifiers();
+        Map retVal=new HashMap();
+        retVal.put("Ingredients", alltypes);
+        retVal.put("modifiers", modifiers);
+        return retVal;
+
+
     }
 
 
