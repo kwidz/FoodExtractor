@@ -1,12 +1,12 @@
-#nutrChick[REC], nutrBoeuf[REC],
-%data Recipe.cdat: REC set, ING set, costs[ING], CONT[ING,REC], nbRepas
+%data Recipe.cdat: REC set, ING set, costs[ING], CONT[ING,REC], nbRepas, nutrChick[REC], nutrBoeuf[REC],nutrPorc[REC], nutrFish[REC], nutrVegan[REC], nbBoeuf, nbPoulet, nbPorc, npPoisson, nbVegan
 variables:
 X[REC]: binary;
 objectives:
 cost: sum{i in ING, r in REC : CONT[i,r ] * costs[i] * X[r] } ->min;
 constraints:
 sum{r in REC : X[r]}=nbRepas;
-#boeuf:sum {r in REC : nutrBoeuf[r]*X[r]}>=1;
-#poulet:sum {r in REC: nutrChick[r]*X[r]}>=1;
-
-
+boeuf:sum {r in REC : nutrBoeuf[r]*X[r]}>=nbBoeuf;
+poulet:sum {r in REC: nutrChick[r]*X[r]}>=nbPoulet;
+porc:sum {r in REC : nutrPorc[r]*X[r]}>=nbPorc;
+poisson:sum {r in REC: nutrFish[r]*X[r]}>=npPoisson;
+vegan:sum {r in REC: nutrVegan[r]*X[r]}>=nbVegan;

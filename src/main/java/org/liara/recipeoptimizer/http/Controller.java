@@ -1,13 +1,11 @@
 package org.liara.recipeoptimizer.http;
 
-import com.sun.javafx.collections.MappingChange;
 import jCMPL.Cmpl;
 import jCMPL.CmplException;
 import jCMPL.CmplSolElement;
 import org.checkerframework.checker.nullness.qual.NonNull;
 import org.liara.recipeoptimizer.crawler.IGACrawler;
 import org.liara.recipeoptimizer.crawler.MetroCrawler;
-import org.liara.recipeoptimizer.crawler.RicardoCrawler;
 import org.liara.recipeoptimizer.data.Epicerie;
 import org.liara.recipeoptimizer.data.Ingredient;
 import org.liara.recipeoptimizer.data.Recipe;
@@ -23,9 +21,10 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.regex.Pattern;
 
+@CrossOrigin(origins = "https://recipe.kwidz.fr", maxAge = 3600)
 @RestController
+
 public class Controller {
     @GetMapping("/crawl")
     public @NonNull String crawl () {
@@ -35,8 +34,7 @@ public class Controller {
             final DAO dao = new DAO(connection);
             dao.clearDB();
             System.out.println("dbCleared");
-            //RicardoCrawler recipecrawler= new RicardoCrawler();
-            //System.out.println("ricardo crawled");
+
             IGACrawler iga = new IGACrawler();
             System.out.println("iga crawled");
             MetroCrawler metro = new MetroCrawler();
@@ -45,8 +43,6 @@ public class Controller {
             System.out.println("Ingredients METRO inserted");
             dao.insertComponents(iga.getAllGroceryComponents(), Epicerie.IGA);
             System.out.println("Ingredients IGA inserted");
-            //dao.insertRecipes(recipecrawler.getAllRecipes());
-            //System.out.println("recipes inserted");
 
         } catch (SQLException e) {
             e.printStackTrace();
@@ -85,7 +81,6 @@ public class Controller {
             makeConfig(Epicerie.IGA);
             Cmpl m = new Cmpl("Recipe.cmpl");
             m.connect("http://kwidz.fr:4000");
-            m.debug(true);
             m.knock();
             m.solve();
             if (m.solverStatus() == Cmpl.SOLVER_OK) {
@@ -100,9 +95,7 @@ public class Controller {
                 }
                 //price
                 System.out.println("Objective value     :" + m.solution().value() + " " + m.objectiveSense());
-
-                //return String.valueOf(m.solution().value());
-
+                
 
                 System.out.println(selectedRecipes.get(0).replace("X[","").replace("]",""));
                 recipesIGA.put("monday",dao.getRecipeById(Integer.parseInt(selectedRecipes.get(0).replace("X[","").replace("]",""))));
@@ -123,7 +116,6 @@ public class Controller {
             makeConfig(Epicerie.METRO);
             m = new Cmpl("Recipe.cmpl");
             m.connect("http://kwidz.fr:4000");
-            m.debug(true);
             m.knock();
             m.solve();
             if (m.solverStatus() == Cmpl.SOLVER_OK) {

@@ -1,7 +1,18 @@
 %REC set <REC>
 %ING set <ING>
 
+%nutrChick[REC]<NUTRCHICK>
+%nutrBoeuf[REC]<NUTRBOEUF>
+%nutrPorc[REC]<NUTRPORC>
+%nutrFish[REC]<NUTRFISH>
+%nutrVegan[REC]<NUTRVEGAN>
+
 %costs[ING] <costs>
 
 %CONT[ING,REC] <CONT>
 %nbRepas <5>
+%nbBoeuf <1>
+%nbPoulet <1>
+%nbPorc <1>
+%npPoisson <1>
+%nbVegan <1>

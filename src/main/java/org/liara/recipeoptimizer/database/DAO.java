@@ -22,7 +22,7 @@ public class DAO {
     private final Connection connection;
     //instanciate DAO object
     public DAO(final Connection connection){
-        classificator = new IngredientReader("/home/Extractor/Meat.txt","/home/Extractor/Modifiers.txt", "/home/Extractor/Vegetables.txt", "/home/Extractor/Forbiden.txt");
+        classificator = new IngredientReader("Meat.txt","Modifiers.txt", "Vegetables.txt", "Forbiden.txt");
         this.connection=connection;
 
     }
@@ -245,7 +245,7 @@ public class DAO {
 
             // loop through the result set
             while (rs.next()) {
-                recipes.add(new RecipeParameter(rs.getInt("id"),rs.getString("name"),rs.getString("url")));
+                recipes.add(new RecipeParameter(rs.getInt("id"),rs.getString("name"),rs.getString("url"),rs.getString("type")));
 
             }
         } catch (SQLException e) {
@@ -300,7 +300,7 @@ public class DAO {
     }
 
     public @NonNull RecipeParameter getRecipeById(int id){
-        String sql2 = "Select ID, NAME, URL from Recipe where ID = ?";
+        String sql2 = "Select ID, NAME, URL, type from Recipe where ID = ?";
         PreparedStatement pstmt = null;
         ResultSet rs=null;
         try {
@@ -312,7 +312,7 @@ public class DAO {
         }
     RecipeParameter r=null;
         try {
-            r = new RecipeParameter(rs.getInt("ID"),rs.getString("NAME"),rs.getString("URL"));
+            r = new RecipeParameter(rs.getInt("ID"),rs.getString("NAME"),rs.getString("URL"), rs.getString("type"));
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -322,7 +322,43 @@ public class DAO {
     }
 
 
+    public void updateRecipeType(RecipeParameter r, int value) throws SQLException {
+        String sql2;
+        PreparedStatement pstmt;
 
+        switch (value){
 
+            case 1:
+                sql2 = "Update Recipe set Type='boeuf' where ID=?;";
+                pstmt = connection.prepareStatement(sql2,Statement.RETURN_GENERATED_KEYS);
+                pstmt.setInt(1,r.getId());
+                pstmt.executeUpdate();
+                break;
+            case 2:
+                sql2 = "Update Recipe set Type='poulet' where ID=?;";
+                pstmt = connection.prepareStatement(sql2,Statement.RETURN_GENERATED_KEYS);
+                pstmt.setInt(1,r.getId());
+                pstmt.executeUpdate();
+                break;
+            case 3:
+                sql2 = "Update Recipe set Type='porc' where ID=?;";
+                pstmt = connection.prepareStatement(sql2,Statement.RETURN_GENERATED_KEYS);
+                pstmt.setInt(1,r.getId());
+                pstmt.executeUpdate();
+                break;
+            case 4:
+                sql2 = "Update Recipe set Type='poisson' where ID=?;";
+                pstmt = connection.prepareStatement(sql2,Statement.RETURN_GENERATED_KEYS);
+                pstmt.setInt(1,r.getId());
+                pstmt.executeUpdate();
+                break;
+            case 5:
+                sql2 = "Update Recipe set Type='vegan' where ID=?;";
+                pstmt = connection.prepareStatement(sql2,Statement.RETURN_GENERATED_KEYS);
+                pstmt.setInt(1,r.getId());
+                pstmt.executeUpdate();
+                break;
 
+    }
+    }
 }

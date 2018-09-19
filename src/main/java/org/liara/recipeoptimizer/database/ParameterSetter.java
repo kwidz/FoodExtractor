@@ -33,6 +33,12 @@ public class ParameterSetter {
         String costs = "<";
         String CONT = "<";
 
+        String nutrChick = "<";
+        String nutrBoeuf= "<";
+        String nutrPorc= "<";
+        String nutrFish= "<";
+        String nutrVegan= "<";
+
         for (IngredientParameter c:components
              ) {
 
@@ -42,11 +48,53 @@ public class ParameterSetter {
         }
         ING=ING.concat(">");
         costs=costs.concat(">");
+        //make parameters for each recipes
         for (RecipeParameter r:recipes
              ) {
             REC=REC.concat('"'+String.valueOf(r.getId())+"\" ");
+            //setup parametres for nutrFish parameter in optimization module
+            if(r.getType().equals("poisson")){
+                nutrFish=nutrFish.concat("1 ");
+            }
+            else{
+                nutrFish=nutrFish.concat("0 ");
+            }
+            //setup parametres for nutrChicken parameter in optimization module
+            if(r.getType().equals("poulet")){
+                nutrChick=nutrChick.concat("1 ");
+            }
+            else{
+                nutrChick=nutrChick.concat("0 ");
+            }
+            //setup parametres for nutrBoeuf parameter in optimization module
+            if(r.getType().equals("boeuf")){
+                nutrBoeuf=nutrBoeuf.concat("1 ");
+            }
+            else{
+                nutrBoeuf=nutrBoeuf.concat("0 ");
+            }
+            //setup parametres for nutrPorc parameter in optimization module
+            if(r.getType().equals("porc")){
+                nutrPorc=nutrPorc.concat("1 ");
+            }
+            else{
+            nutrPorc=nutrPorc.concat("0 ");
+            }
+            //setup parametres for nutrVegan parameter in optimization module
+            if(r.getType().equals("vegan")){
+                nutrVegan=nutrVegan.concat("1 ");
+            }
+            else{
+                nutrVegan=nutrVegan.concat("0 ");
+            }
+
         }
         REC=REC.concat(">");
+        nutrBoeuf=nutrBoeuf.concat(">");
+        nutrChick=nutrChick.concat(">");
+        nutrFish=nutrFish.concat(">");
+        nutrPorc=nutrPorc.concat(">");
+        nutrVegan=nutrVegan.concat(">");
 
         boolean findComponent;
         for (IngredientParameter i:components
@@ -85,6 +133,11 @@ public class ParameterSetter {
         writeParameterInfile("<ING>",ING);
         writeParameterInfile("<costs>",costs);
         writeParameterInfile("<CONT>",CONT);
+        writeParameterInfile("<NUTRCHICK>",nutrChick);
+        writeParameterInfile("<NUTRBOEUF>",nutrBoeuf);
+        writeParameterInfile("<NUTRPORC>",nutrPorc);
+        writeParameterInfile("<NUTRFISH>",nutrFish);
+        writeParameterInfile("<NUTRVEGAN>",nutrVegan);
         return new Parameters(REC,ING,costs,CONT);
 
 
