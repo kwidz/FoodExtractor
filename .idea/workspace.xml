@@ -2,28 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a137f407-c27c-4bd2-b7fb-38f6dea3e291" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/machinelearning/RecipeReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/http/RequestWrapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MachineLearningGUI.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/machinelearning/MachineLearningGUI.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MachineLearningGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/machinelearning/MachineLearningGUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ParametersSample" beforeDir="false" afterPath="$PROJECT_DIR$/ParametersSample" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Recipe.cdat" beforeDir="false" afterPath="$PROJECT_DIR$/Recipe.cdat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Recipe.cinst" beforeDir="false" afterPath="$PROJECT_DIR$/Recipe.cinst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Recipe.cmpl" beforeDir="false" afterPath="$PROJECT_DIR$/Recipe.cmpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/liara/recipeoptimizer/crawler/RicardoCrawler.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/org/liara/recipeoptimizer/crawler/RicardoCrawler.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/liara/recipeoptimizer/data/RecipeParameter.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/org/liara/recipeoptimizer/data/RecipeParameter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/liara/recipeoptimizer/database/DAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/org/liara/recipeoptimizer/database/DAO.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/liara/recipeoptimizer/database/ParameterSetter.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/org/liara/recipeoptimizer/database/ParameterSetter.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/liara/recipeoptimizer/http/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/org/liara/recipeoptimizer/http/Controller.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/libs/ExtracteurIngrédients.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/ExtracteurIngrédients.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/bootJar/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/bootJar/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/org/liara/recipeoptimizer/crawler/RicardoCrawler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/org/liara/recipeoptimizer/crawler/RicardoCrawler.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/org/liara/recipeoptimizer/data/RecipeParameter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/org/liara/recipeoptimizer/data/RecipeParameter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/org/liara/recipeoptimizer/database/DAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/org/liara/recipeoptimizer/database/DAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/org/liara/recipeoptimizer/database/ParameterSetter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/org/liara/recipeoptimizer/database/ParameterSetter.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/org/liara/recipeoptimizer/http/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/org/liara/recipeoptimizer/http/Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/crawler/RicardoCrawler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/crawler/RicardoCrawler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/data/RecipeParameter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/data/RecipeParameter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/database/DAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/database/DAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/database/ParameterSetter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/database/ParameterSetter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/http/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/http/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.db" beforeDir="false" afterPath="$PROJECT_DIR$/test.db" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -143,26 +138,28 @@
     <session id="443595440">
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="3928" />
+          <entry key="java" value="5820" />
           <entry key="properties" value="1" />
-          <entry key="txt" value="232" />
+          <entry key="txt" value="304" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="3928" />
-          <entry key="PLAIN_TEXT" value="232" />
+          <entry key="JAVA" value="5820" />
+          <entry key="PLAIN_TEXT" value="304" />
           <entry key="Properties" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="9" />
-          <entry key="project.open.time.1" value="2" />
-          <entry key="project.open.time.6" value="9" />
-          <entry key="project.open.time.7" value="5" />
+          <entry key="project.closed" value="15" />
+          <entry key="project.open.time.1" value="4" />
+          <entry key="project.open.time.12" value="1" />
+          <entry key="project.open.time.5" value="3" />
+          <entry key="project.open.time.6" value="10" />
+          <entry key="project.open.time.7" value="6" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="17" />
+          <entry key="project.opened" value="25" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -171,7 +168,7 @@
           <entry key="cinst" value="1" />
           <entry key="cmpl" value="1" />
           <entry key="gradle" value="2" />
-          <entry key="java" value="28" />
+          <entry key="java" value="38" />
           <entry key="png" value="1" />
           <entry key="properties" value="1" />
         </counts>
@@ -180,7 +177,7 @@
         <counts>
           <entry key="Groovy" value="2" />
           <entry key="Image" value="1" />
-          <entry key="JAVA" value="28" />
+          <entry key="JAVA" value="38" />
           <entry key="PLAIN_TEXT" value="3" />
           <entry key="Properties" value="1" />
         </counts>
@@ -189,59 +186,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/machinelearning/IngredientReader.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1995">
-              <caret line="106" column="120" selection-start-line="106" selection-start-column="50" selection-end-line="106" selection-end-column="120" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/database/DAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="777">
-              <caret line="42" column="58" selection-start-line="42" selection-start-column="52" selection-end-line="42" selection-end-column="58" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/data/Recipe.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="546">
-              <caret line="34" selection-start-line="34" selection-end-line="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/machinelearning/MachineLearningGUI.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="34" column="24" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="24" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/database/ParameterSetter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2226">
-              <caret line="119" column="23" selection-start-line="119" selection-start-column="19" selection-end-line="119" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/http/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="269">
-              <caret line="72" selection-start-line="72" selection-end-line="72" />
+            <state relative-caret-position="368">
+              <caret line="147" column="22" lean-forward="true" selection-start-line="147" selection-start-column="22" selection-end-line="147" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -250,10 +199,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/data/Epicerie.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/http/RequestWrapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="63">
-              <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+            <state relative-caret-position="252">
+              <caret line="19" column="34" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -261,20 +213,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/data/RecipeParameter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="19" column="31" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/data/Parameters.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="1050">
+              <caret line="60" column="54" selection-start-line="60" selection-start-column="54" selection-end-line="60" selection-end-column="54" />
             </state>
           </provider>
         </entry>
@@ -287,6 +227,28 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/database/ParameterSetter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3024">
+              <caret line="157" column="5" selection-start-line="157" selection-start-column="5" selection-end-line="157" selection-end-column="5" />
+              <folding>
+                <element signature="e#497#498#0" expanded="true" />
+                <element signature="e#527#528#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/crawler/RicardoCrawler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="603">
+              <caret line="49" column="25" lean-forward="true" selection-start-line="49" selection-start-column="25" selection-end-line="49" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -766,23 +728,23 @@
         <option value="$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/data/Recipe.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/crawler/IngredientCrawler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/crawler/RicardoCrawler.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/data/Epicerie.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/crawler/MetroCrawler.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/machinelearning/IngredientReader.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/http/Controller.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/machinelearning/MachineLearningGUI.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/data/RecipeParameter.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/database/DAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/machinelearning/RecipeReader.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/data/RecipeParameter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/http/RequestWrapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/database/ParameterSetter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/crawler/RicardoCrawler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/http/Controller.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1920" />
     <option name="width" value="1920" />
-    <option name="height" value="1054" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -794,23 +756,12 @@
     <panes>
       <pane id="Scope" />
       <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="ExtracteurIngrédients" type="b2602c69:ProjectViewProjectNode" />
               <item name="ExtracteurIngredients" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="ExtracteurIngrédients" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ExtracteurIngredients" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="build" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ExtracteurIngrédients" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ExtracteurIngredients" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ExtracteurIngrédients" type="b2602c69:ProjectViewProjectNode" />
@@ -844,14 +795,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ExtracteurIngrédients" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ExtracteurIngredients" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="database" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -862,29 +805,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="http" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="ExtracteurIngrédients" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ExtracteurIngredients" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="machinelearning" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ExtracteurIngrédients" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ExtracteurIngredients" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="math" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ExtracteurIngrédients" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ExtracteurIngredients" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -893,7 +813,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="/home&#9;FILE&#9;jar:///usr/lib/jvm/java-8-jdk/jre/lib/deploy.jar!/com/sun/deploy/resources/image/home24-d.png" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537238813489" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538421790320" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
@@ -922,23 +842,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.ExtracteurIngredients [bootRun]">
-    <configuration name="Maintest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <envs>
-        <env name="CMPLBINARY" value="$PROJECT_DIR$/../../Memoire\ Maitrise/CMPLserver/Cmpl/cmpl" />
-      </envs>
-      <option name="MAIN_CLASS_NAME" value="org.liara.recipeoptimizer.database.Maintest" />
-      <module name="ExtracteurIngrédients_main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.liara.recipeoptimizer.database.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Gradle.ExtracteurIngredients [bootJar]">
     <configuration name="MetroCrawler" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.liara.recipeoptimizer.crawler.MetroCrawler" />
       <module name="ExtracteurIngrédients_main" />
@@ -960,6 +864,20 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.liara.recipeoptimizer.machinelearning.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RicardoCrawler" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.liara.recipeoptimizer.crawler.RicardoCrawler" />
+      <module name="ExtracteurIngrédients_main" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.liara.recipeoptimizer.crawler.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -1024,19 +942,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Maintest" />
       <item itemvalue="Gradle.ExtracteurIngredients [bootRun]" />
       <item itemvalue="Gradle.ExtracteurIngredients [bootJar]" />
       <item itemvalue="Application.MetroCrawler" />
       <item itemvalue="Application.RecipeReader" />
+      <item itemvalue="Application.RicardoCrawler" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.ExtracteurIngredients [bootRun]" />
         <item itemvalue="Gradle.ExtracteurIngredients [bootJar]" />
+        <item itemvalue="Gradle.ExtracteurIngredients [bootRun]" />
+        <item itemvalue="Application.RicardoCrawler" />
         <item itemvalue="Application.RecipeReader" />
         <item itemvalue="Application.MetroCrawler" />
-        <item itemvalue="Application.Maintest" />
       </list>
     </recent_temporary>
   </component>
@@ -1072,14 +990,21 @@
       <option name="project" value="LOCAL" />
       <updated>1536621906104</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="return optimized plan with variety of recipes">
+      <created>1537363193523</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1537363193524</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1920" y="0" width="1920" height="1054" extended-state="6" />
+    <frame x="0" y="0" width="1920" height="1080" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18036287" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20010673" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -1088,8 +1013,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info active="true" anchor="bottom" id="Find" order="1" visible="true" weight="0.3275862" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.4375" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.4371069" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39978448" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -1116,7 +1041,8 @@
     <MESSAGE value="Working backend optimize functionality" />
     <MESSAGE value="add second grocery to optimization engine and backend !" />
     <MESSAGE value="function to send all ingredient types to frontend and preproduction build tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="function to send all ingredient types to frontend and preproduction build tests" />
+    <MESSAGE value="return optimized plan with variety of recipes" />
+    <option name="LAST_COMMIT_MESSAGE" value="return optimized plan with variety of recipes" />
   </component>
   <component name="editorHistoryManager">
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.solvice/jcmpl/1.11.1-1/3d1032e2d8b7db57947335bfd2c0f3fd976a43dc/jcmpl-1.11.1-1-sources.jar!/jCMPL/Cmpl.java">
@@ -1172,13 +1098,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/crawler/RicardoCrawler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1470">
-          <caret line="78" selection-start-line="78" selection-end-line="78" />
         </state>
       </provider>
     </entry>
@@ -1261,16 +1180,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
           <caret line="34" column="24" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/database/ParameterSetter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2226">
-          <caret line="119" column="23" selection-start-line="119" selection-start-column="19" selection-end-line="119" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -1281,20 +1190,69 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/data/RecipeParameter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="19" column="31" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/data/Parameters.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
           <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-8-jdk/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="2993" selection-start-line="2993" selection-end-line="2993" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-8-jdk/src.zip!/java/lang/AbstractStringBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="68" selection-start-line="68" selection-end-line="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-8-jdk/src.zip!/java/lang/StringBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="89" selection-start-line="89" selection-end-line="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-8-jdk/src.zip!/java/lang/Class.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="639" selection-start-line="639" selection-end-line="639" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-8-jdk/src.zip!/java/io/PrintStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="820" selection-start-line="820" selection-end-line="820" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-8-jdk/src.zip!/java/lang/Object.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="147" column="19" selection-start-line="147" selection-start-column="19" selection-end-line="147" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/http/RequestWrapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="19" column="34" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/data/RecipeParameter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1050">
+          <caret line="60" column="54" selection-start-line="60" selection-start-column="54" selection-end-line="60" selection-end-column="54" />
         </state>
       </provider>
     </entry>
@@ -1308,10 +1266,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/database/ParameterSetter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3024">
+          <caret line="157" column="5" selection-start-line="157" selection-start-column="5" selection-end-line="157" selection-end-column="5" />
+          <folding>
+            <element signature="e#497#498#0" expanded="true" />
+            <element signature="e#527#528#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/crawler/RicardoCrawler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="603">
+          <caret line="49" column="25" lean-forward="true" selection-start-line="49" selection-start-column="25" selection-end-line="49" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/liara/recipeoptimizer/http/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="72" selection-start-line="72" selection-end-line="72" />
+        <state relative-caret-position="368">
+          <caret line="147" column="22" lean-forward="true" selection-start-line="147" selection-start-column="22" selection-end-line="147" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -21,6 +21,32 @@ public class RicardoCrawler {
 
     }
 
+    public static @org.checkerframework.checker.nullness.qual.NonNull ArrayList<String> crawlGroceryList(ArrayList<String> linkList){
+        //formIngredients
+        ArrayList<String> allIngredients=new ArrayList<>();
+        for(String url : linkList){
+            Document doc = null;
+            try {
+                doc = Jsoup.connect(url)
+                        .userAgent("Mozilla/5.0 (X11; Linux x86_64; rv:58.0) Gecko/20100101 Firefox/58.0")
+                        .referrer("http://www.google.com")
+                        .maxBodySize(0)
+                        .get();
+
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            Elements components = doc.getElementById("formIngredients").getElementsByTag("li");
+            for (Element e:components) {
+                allIngredients.add(e.text());
+
+            }
+            allIngredients.add("\n");
+        }
+        return allIngredients;
+
+    }
+
     private void crawl(){
         int i = 0;
         while(true) {

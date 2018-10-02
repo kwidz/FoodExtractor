@@ -22,7 +22,7 @@ public class ParameterSetter {
         this.dao = dao;
     }
 
-    public Parameters parameterFile(Epicerie epicerie){
+    public Parameters parameterFile(Epicerie epicerie, List<RecipeParameter> forbiddenRecipes, List<String> freeComponents, int[] balance){
 
         ArrayList<IngredientParameter> components = dao.selectAllING(epicerie);
         ArrayList<RecipeParameter> recipes = dao.selectAllREC();
@@ -38,12 +38,20 @@ public class ParameterSetter {
         String nutrPorc= "<";
         String nutrFish= "<";
         String nutrVegan= "<";
+        int balanceVegan = balance[0];
+        int balanceBoeuf = balance[1];
+        int balancePorc = balance[2];
+        int balanceChick = balance[3];
+        int balanceFish = balance[4];
 
         for (IngredientParameter c:components
              ) {
 
             ING=ING.concat('\"'+String.valueOf(c.getId())+"\" ");
-            costs=costs.concat(String.valueOf(c.getPrice())+" ");
+            if(freeComponents.contains(c.getType())){
+                costs=costs.concat(String.valueOf(0f+" "));
+            }else
+                costs=costs.concat(String.valueOf(c.getPrice())+" ");
 
         }
         ING=ING.concat(">");
@@ -51,42 +59,41 @@ public class ParameterSetter {
         //make parameters for each recipes
         for (RecipeParameter r:recipes
              ) {
-            REC=REC.concat('"'+String.valueOf(r.getId())+"\" ");
-            //setup parametres for nutrFish parameter in optimization module
-            if(r.getType().equals("poisson")){
-                nutrFish=nutrFish.concat("1 ");
+            if(!forbiddenRecipes.contains(r)) {
+
+                REC = REC.concat('"' + String.valueOf(r.getId()) + "\" ");
+                //setup parametres for nutrFish parameter in optimization module
+                if (r.getType().equals("poisson")) {
+                    nutrFish = nutrFish.concat("1 ");
+                } else {
+                    nutrFish = nutrFish.concat("0 ");
+                }
+                //setup parametres for nutrChicken parameter in optimization module
+                if (r.getType().equals("poulet")) {
+                    nutrChick = nutrChick.concat("1 ");
+                } else {
+                    nutrChick = nutrChick.concat("0 ");
+                }
+                //setup parametres for nutrBoeuf parameter in optimization module
+                if (r.getType().equals("boeuf")) {
+                    nutrBoeuf = nutrBoeuf.concat("1 ");
+                } else {
+                    nutrBoeuf = nutrBoeuf.concat("0 ");
+                }
+                //setup parametres for nutrPorc parameter in optimization module
+                if (r.getType().equals("porc")) {
+                    nutrPorc = nutrPorc.concat("1 ");
+                } else {
+                    nutrPorc = nutrPorc.concat("0 ");
+                }
+                //setup parametres for nutrVegan parameter in optimization module
+                if (r.getType().equals("vegan")) {
+                    nutrVegan = nutrVegan.concat("1 ");
+                } else {
+                    nutrVegan = nutrVegan.concat("0 ");
+                }
             }
-            else{
-                nutrFish=nutrFish.concat("0 ");
-            }
-            //setup parametres for nutrChicken parameter in optimization module
-            if(r.getType().equals("poulet")){
-                nutrChick=nutrChick.concat("1 ");
-            }
-            else{
-                nutrChick=nutrChick.concat("0 ");
-            }
-            //setup parametres for nutrBoeuf parameter in optimization module
-            if(r.getType().equals("boeuf")){
-                nutrBoeuf=nutrBoeuf.concat("1 ");
-            }
-            else{
-                nutrBoeuf=nutrBoeuf.concat("0 ");
-            }
-            //setup parametres for nutrPorc parameter in optimization module
-            if(r.getType().equals("porc")){
-                nutrPorc=nutrPorc.concat("1 ");
-            }
-            else{
-            nutrPorc=nutrPorc.concat("0 ");
-            }
-            //setup parametres for nutrVegan parameter in optimization module
-            if(r.getType().equals("vegan")){
-                nutrVegan=nutrVegan.concat("1 ");
-            }
-            else{
-                nutrVegan=nutrVegan.concat("0 ");
-            }
+
 
         }
         REC=REC.concat(">");
@@ -101,21 +108,22 @@ public class ParameterSetter {
              ) {
             for (RecipeParameter r:recipes
                  ) {
-                findComponent = false;
-                for (Composition c:compositions
-                     ) {
-                    if (c.getIdRecipe()==r.getId()) {
-                        if (c.getIngredientType().equals(i.getType())) {
+                if (!forbiddenRecipes.contains(r)) {
+                    findComponent = false;
+                    for (Composition c : compositions
+                    ) {
+                        if (c.getIdRecipe() == r.getId()) {
+                            if (c.getIngredientType().equals(i.getType())) {
 
-                            findComponent = true;
+                                findComponent = true;
+                            }
                         }
                     }
+                    if (!findComponent) {
+                        CONT = CONT.concat("0 ");
+                    } else
+                        CONT = CONT.concat("1 ");
                 }
-                if(!findComponent){
-                    CONT = CONT.concat("0 ");
-                }
-                else
-                    CONT = CONT.concat("1 ");
             }
             CONT = CONT.concat("\n");
         }
@@ -138,6 +146,11 @@ public class ParameterSetter {
         writeParameterInfile("<NUTRPORC>",nutrPorc);
         writeParameterInfile("<NUTRFISH>",nutrFish);
         writeParameterInfile("<NUTRVEGAN>",nutrVegan);
+        writeParameterInfile("BALVEGAN", String.valueOf(balanceVegan));
+        writeParameterInfile("BALBOEUF", String.valueOf(balanceBoeuf));
+        writeParameterInfile("BALCHICK", String.valueOf(balanceChick));
+        writeParameterInfile("BALFISH", String.valueOf(balanceFish));
+        writeParameterInfile("BALPORC", String.valueOf(balancePorc));
         return new Parameters(REC,ING,costs,CONT);
 
 

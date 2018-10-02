@@ -11,8 +11,8 @@
 
 %CONT[ING,REC] <CONT>
 %nbRepas <5>
-%nbBoeuf <1>
-%nbPoulet <1>
-%nbPorc <1>
-%npPoisson <1>
-%nbVegan <1>
+%nbBoeuf <BALBOEUF>
+%nbPoulet <BALCHICK>
+%nbPorc <BALPORC>
+%npPoisson <BALFISH>
+%nbVegan <BALVEGAN>
