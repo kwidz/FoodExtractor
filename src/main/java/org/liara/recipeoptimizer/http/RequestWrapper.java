@@ -4,10 +4,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import org.checkerframework.checker.nullness.qual.NonNull;
 import org.liara.recipeoptimizer.data.RecipeParameter;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 public class RequestWrapper {
     private final @NonNull List<@NonNull RecipeParameter> forbiddenRecipes;
@@ -42,5 +39,14 @@ public class RequestWrapper {
 
     public @NonNull List<@NonNull String> getFreeComponents() {
         return freeComponents;
+    }
+
+    @Override
+    public String toString() {
+        return "RequestWrapper{" +
+                "forbiddenRecipes=" + forbiddenRecipes +
+                ", freeComponents=" + freeComponents +
+                ", balance=" + Arrays.toString(balance) +
+                '}';
     }
 }

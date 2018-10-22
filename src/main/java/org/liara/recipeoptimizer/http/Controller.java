@@ -14,21 +14,23 @@ import org.liara.recipeoptimizer.data.RecipeParameter;
 import org.liara.recipeoptimizer.database.DAO;
 import org.liara.recipeoptimizer.database.ParameterSetter;
 import org.liara.recipeoptimizer.machinelearning.IngredientReader;
+import org.springframework.cache.annotation.Cacheable;
+import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.http.CacheControl;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.io.*;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.text.SimpleDateFormat;
+import java.util.*;
 import java.util.concurrent.TimeUnit;
 
 @CrossOrigin(origins = "*", maxAge = 3600)
 @RestController
+@EnableCaching
 
 public class Controller {
     @GetMapping("/crawl")
@@ -130,6 +132,8 @@ public class Controller {
 
     @PostMapping("/optimize")
     public @NonNull ResponseEntity<Map<String, Object>> optimize(@RequestBody(required = false) RequestWrapper r) {
+
+
         Map<String, Object> week = new HashMap<>();
         if (r == null)
             r = new RequestWrapper(null, null, null);
@@ -217,6 +221,21 @@ public class Controller {
             e.printStackTrace();
         }
 
+        try(FileWriter fw = new FileWriter("logs.json", true);
+            BufferedWriter bw = new BufferedWriter(fw);
+            PrintWriter out = new PrintWriter(bw))
+        {
+            SimpleDateFormat sdf = new SimpleDateFormat("MM/dd/yyyy HH:mm:ss.SSS");
+            out.println("date : "+ sdf.format(new Date().getTime()));
+            out.println("Request : "+ r);
+            out.println("Response : "+week);
+            out.println("########################################");
+            out.flush();
+            System.out.println("test !!!");
+        } catch (IOException e) {
+            //exception handling left as an exercise for the reader
+        }
+
         return ResponseEntity.ok().cacheControl(CacheControl.maxAge(7, TimeUnit.DAYS)).body(week);
     }
 
@@ -269,6 +288,7 @@ public class Controller {
 
 
     }
+    @Cacheable("urls")
     @PostMapping("/getList")
     public @NonNull ArrayList<String> getList(@RequestBody ArrayList<String> urls){
         System.out.println(urls);
