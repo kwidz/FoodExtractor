@@ -30,6 +30,11 @@ public class DAO {
 
     }
 
+    public void getAllRecipeIng(){
+
+
+    }
+
     public void createDB(){
 
         Statement stmt = null;

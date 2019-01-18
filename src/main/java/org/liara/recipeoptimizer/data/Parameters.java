@@ -23,6 +23,8 @@ public class Parameters {
         ing=ing.replace("\"","");
         for (String word:ing.split(" ")
         ) {
+            System.out.println("##############");
+            System.out.println(ING);
             ING.add(Integer.parseInt(word));
 
         }
